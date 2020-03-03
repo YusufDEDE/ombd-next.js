@@ -13,24 +13,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/dist/mobxreact.esm.js");
 var _jsxFileName = "/home/commodore64/ombd-next/components/Navbar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var Navbar = function Navbar() {
+
+var Navbar = function Navbar(props) {
   return __jsx("nav", {
     className: "navbar navbar-expand navbar-dark bg-dark mb-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, __jsx("a", {
@@ -38,69 +40,75 @@ var Navbar = function Navbar() {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, "Ombd WebApp"), __jsx("div", {
     className: "collapse navbar-collapse",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, __jsx("ul", {
     className: "navbar-nav ml-auto",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, __jsx("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx("a", {
     className: "nav-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, "Home"))), __jsx("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/favorites",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, __jsx("a", {
     className: "nav-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
-  }, "Favorites")))))));
+  }, "Favorites( ", __jsx("b", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, props.store.count), " )")))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Navbar);
+/* harmony default export */ __webpack_exports__["default"] = (Object(mobx_react__WEBPACK_IMPORTED_MODULE_2__["inject"])('store')(Object(mobx_react__WEBPACK_IMPORTED_MODULE_2__["observer"])(Navbar)));
 
 /***/ }),
 
@@ -145,6 +153,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "./n
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/is-iterable */ "./node_modules/core-js/library/fn/is-iterable.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "./node_modules/core-js/library/fn/json/stringify.js");
 
 /***/ }),
 
@@ -952,6 +971,22 @@ module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "./node
 __webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
 __webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
 module.exports = __webpack_require__(/*! ../modules/core.is-iterable */ "./node_modules/core-js/library/modules/core.is-iterable.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/json/stringify.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/json/stringify.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var core = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js");
+var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
+module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
+  return $JSON.stringify.apply($JSON, arguments);
+};
 
 
 /***/ }),
@@ -4988,6 +5023,372 @@ var bind = __webpack_require__(/*! function-bind */ "./node_modules/function-bin
 
 module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
+
+/***/ }),
+
+/***/ "./node_modules/mobx-localstorage/lib/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/mobx-localstorage/lib/index.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __values = (this && this.__values) || function (o) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+    if (m) return m.call(o);
+    return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+};
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var mobx_1 = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
+var reactive_localstorage_1 = __webpack_require__(/*! reactive-localstorage */ "./node_modules/reactive-localstorage/lib/index.js");
+var LocalStorage = /** @class */ (function () {
+    function LocalStorage() {
+        var _this = this;
+        this[Symbol.toStringTag] = 'Map';
+        this._keyBoxes = new Map();
+        this._valueBoxes = new Map();
+        this._keys = new Set();
+        this._keysAtom = mobx_1.createAtom('mobx storage keys');
+        this._is_all_keys_observed = false;
+        reactive_localstorage_1.default.on('change', mobx_1.action(function (key, value) {
+            if (typeof key === 'string') {
+                if (typeof value === 'string') {
+                    _this._set(key, value);
+                }
+                else {
+                    _this._delete(key);
+                }
+            }
+            else {
+                _this._clear();
+            }
+        }));
+    }
+    Object.defineProperty(LocalStorage.prototype, "length", {
+        get: function () {
+            return this.size;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(LocalStorage.prototype, "size", {
+        get: function () {
+            this._keysAtom.reportObserved();
+            this._syncAllKeys();
+            return this._keys.size;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    LocalStorage.prototype.key = function (index) {
+        return reactive_localstorage_1.default.key(index);
+    };
+    LocalStorage.prototype.getItem = function (key) {
+        return this.get(key);
+    };
+    LocalStorage.prototype.setItem = function (key, value) {
+        this.set(key, value);
+    };
+    LocalStorage.prototype.removeItem = function (key) {
+        this.delete(key);
+    };
+    LocalStorage.prototype.has = function (key) {
+        return this._get_key_box(key).get();
+    };
+    LocalStorage.prototype.get = function (key) {
+        return this._get_value_box(key).get();
+    };
+    LocalStorage.prototype.set = function (key, value) {
+        reactive_localstorage_1.default.setItem(key, JSON.stringify(mobx_1.toJS(value)));
+        return this;
+    };
+    LocalStorage.prototype.delete = function (key) {
+        var has = (this._is_all_keys_observed
+            ? this._keys.has(key)
+            : typeof reactive_localstorage_1.default.getItem(key) === 'string');
+        reactive_localstorage_1.default.removeItem(key);
+        return has;
+    };
+    LocalStorage.prototype.clear = function () {
+        reactive_localstorage_1.default.clear();
+    };
+    LocalStorage.prototype.keys = function () {
+        this._keysAtom.reportObserved();
+        this._syncAllKeys();
+        return this._keys.values();
+    };
+    LocalStorage.prototype.values = function () {
+        var e_1, _a, _b, _c, key, e_1_1;
+        return __generator(this, function (_d) {
+            switch (_d.label) {
+                case 0:
+                    _d.trys.push([0, 5, 6, 7]);
+                    _b = __values(this.keys()), _c = _b.next();
+                    _d.label = 1;
+                case 1:
+                    if (!!_c.done) return [3 /*break*/, 4];
+                    key = _c.value;
+                    return [4 /*yield*/, this._get_value_box(key).get()];
+                case 2:
+                    _d.sent();
+                    _d.label = 3;
+                case 3:
+                    _c = _b.next();
+                    return [3 /*break*/, 1];
+                case 4: return [3 /*break*/, 7];
+                case 5:
+                    e_1_1 = _d.sent();
+                    e_1 = { error: e_1_1 };
+                    return [3 /*break*/, 7];
+                case 6:
+                    try {
+                        if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                    }
+                    finally { if (e_1) throw e_1.error; }
+                    return [7 /*endfinally*/];
+                case 7: return [2 /*return*/];
+            }
+        });
+    };
+    LocalStorage.prototype.entries = function () {
+        var e_2, _a, _b, _c, key, e_2_1;
+        return __generator(this, function (_d) {
+            switch (_d.label) {
+                case 0:
+                    _d.trys.push([0, 5, 6, 7]);
+                    _b = __values(this.keys()), _c = _b.next();
+                    _d.label = 1;
+                case 1:
+                    if (!!_c.done) return [3 /*break*/, 4];
+                    key = _c.value;
+                    return [4 /*yield*/, [key, this._get_value_box(key).get()]];
+                case 2:
+                    _d.sent();
+                    _d.label = 3;
+                case 3:
+                    _c = _b.next();
+                    return [3 /*break*/, 1];
+                case 4: return [3 /*break*/, 7];
+                case 5:
+                    e_2_1 = _d.sent();
+                    e_2 = { error: e_2_1 };
+                    return [3 /*break*/, 7];
+                case 6:
+                    try {
+                        if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                    }
+                    finally { if (e_2) throw e_2.error; }
+                    return [7 /*endfinally*/];
+                case 7: return [2 /*return*/];
+            }
+        });
+    };
+    LocalStorage.prototype[Symbol.iterator] = function () {
+        return this.entries();
+    };
+    LocalStorage.prototype.forEach = function (callbackfn, thisArg) {
+        var e_3, _a;
+        this._keysAtom.reportChanged();
+        this._syncAllKeys();
+        try {
+            for (var _b = __values(this.entries()), _c = _b.next(); !_c.done; _c = _b.next()) {
+                var _d = __read(_c.value, 2), key = _d[0], value = _d[1];
+                callbackfn.call(thisArg, value, key, this);
+            }
+        }
+        catch (e_3_1) { e_3 = { error: e_3_1 }; }
+        finally {
+            try {
+                if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+            }
+            finally { if (e_3) throw e_3.error; }
+        }
+    };
+    LocalStorage.prototype._set = function (key, value) {
+        this._keysAtom.reportChanged();
+        this._keys.add(key);
+        var keyBox = this._keyBoxes.get(key);
+        if (keyBox) {
+            keyBox.set(true);
+        }
+        var valueBox = this._valueBoxes.get(key);
+        if (valueBox) {
+            valueBox.set(parseValue(value));
+        }
+    };
+    LocalStorage.prototype._delete = function (key) {
+        this._keysAtom.reportChanged();
+        this._keys.delete(key);
+        var keyBox = this._keyBoxes.get(key);
+        if (keyBox) {
+            keyBox.set(false);
+        }
+        var valueBox = this._valueBoxes.get(key);
+        if (valueBox) {
+            valueBox.set(null);
+        }
+    };
+    LocalStorage.prototype._clear = function () {
+        var e_4, _a, e_5, _b;
+        this._keysAtom.reportChanged();
+        this._keys.clear();
+        try {
+            for (var _c = __values(this._keyBoxes.values()), _d = _c.next(); !_d.done; _d = _c.next()) {
+                var box = _d.value;
+                box.set(false);
+            }
+        }
+        catch (e_4_1) { e_4 = { error: e_4_1 }; }
+        finally {
+            try {
+                if (_d && !_d.done && (_a = _c.return)) _a.call(_c);
+            }
+            finally { if (e_4) throw e_4.error; }
+        }
+        try {
+            for (var _e = __values(this._valueBoxes.values()), _f = _e.next(); !_f.done; _f = _e.next()) {
+                var box = _f.value;
+                box.set(null);
+            }
+        }
+        catch (e_5_1) { e_5 = { error: e_5_1 }; }
+        finally {
+            try {
+                if (_f && !_f.done && (_b = _e.return)) _b.call(_e);
+            }
+            finally { if (e_5) throw e_5.error; }
+        }
+    };
+    LocalStorage.prototype._get_key_box = function (key) {
+        var boxes = this._keyBoxes;
+        var box = boxes.get(key);
+        if (!box) {
+            var value = (this._is_all_keys_observed
+                ? false
+                : typeof reactive_localstorage_1.default.getItem(key) === 'string');
+            boxes.set(key, box = mobx_1.observable.box(value));
+        }
+        return box;
+    };
+    LocalStorage.prototype._get_value_box = function (key) {
+        var boxes = this._valueBoxes;
+        var box = boxes.get(key);
+        if (!box) {
+            var value = this._is_all_keys_observed ? null : reactive_localstorage_1.default.getItem(key);
+            boxes.set(key, box = mobx_1.observable.box(parseValue(value)));
+        }
+        return box;
+    };
+    LocalStorage.prototype._syncAllKeys = function () {
+        if (this._is_all_keys_observed)
+            return;
+        this._is_all_keys_observed = true;
+        var len = reactive_localstorage_1.default.length;
+        var boxes = this._keyBoxes;
+        var keys = this._keys;
+        keys.clear();
+        for (var i = 0; i < len; i++) {
+            var key = reactive_localstorage_1.default.key(i);
+            if (typeof key !== 'string')
+                continue;
+            keys.add(key);
+            if (boxes.has(key))
+                continue;
+            boxes.set(key, mobx_1.observable.box(true));
+        }
+    };
+    __decorate([
+        mobx_1.action,
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [String, Object]),
+        __metadata("design:returntype", void 0)
+    ], LocalStorage.prototype, "set", null);
+    __decorate([
+        mobx_1.action,
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [String]),
+        __metadata("design:returntype", void 0)
+    ], LocalStorage.prototype, "delete", null);
+    __decorate([
+        mobx_1.action,
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], LocalStorage.prototype, "clear", null);
+    return LocalStorage;
+}());
+exports.LocalStorage = LocalStorage;
+function parseValue(value) {
+    try {
+        return JSON.parse(value);
+    }
+    catch (e) {
+        // ignore if cannot parse as JSON
+    }
+    return value;
+}
+exports.parseValue = parseValue;
+exports.default = new LocalStorage();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLDZCQUE2RTtBQUM3RSwrREFBZ0Q7QUFFaEQ7SUFVRTtRQUFBLGlCQVlDO1FBckJELEtBQUMsTUFBTSxDQUFDLFdBQVcsQ0FBQyxHQUFHLEtBQWMsQ0FBQTtRQUU3QixjQUFTLEdBQUcsSUFBSSxHQUFHLEVBQXFDLENBQUE7UUFDeEQsZ0JBQVcsR0FBRyxJQUFJLEdBQUcsRUFBaUMsQ0FBQTtRQUN0RCxVQUFLLEdBQUcsSUFBSSxHQUFHLEVBQVUsQ0FBQTtRQUV6QixjQUFTLEdBQUcsaUJBQVUsQ0FBQyxtQkFBbUIsQ0FBQyxDQUFBO1FBQzNDLDBCQUFxQixHQUFHLEtBQUssQ0FBQTtRQUduQywrQkFBWSxDQUFDLEVBQUUsQ0FBQyxRQUFRLEVBQUUsYUFBTSxDQUFDLFVBQUMsR0FBa0IsRUFBRSxLQUFvQjtZQUN4RSxJQUFJLE9BQU8sR0FBRyxLQUFLLFFBQVEsRUFBRTtnQkFDM0IsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7b0JBQzdCLEtBQUksQ0FBQyxJQUFJLENBQUMsR0FBRyxFQUFFLEtBQUssQ0FBQyxDQUFBO2lCQUN0QjtxQkFBTTtvQkFDTCxLQUFJLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFBO2lCQUNsQjthQUNGO2lCQUFNO2dCQUNMLEtBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQTthQUNkO1FBQ0gsQ0FBQyxDQUFDLENBQUMsQ0FBQTtJQUNMLENBQUM7SUFFRCxzQkFBSSxnQ0FBTTthQUFWO1lBQ0UsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFBO1FBQ2xCLENBQUM7OztPQUFBO0lBRUQsc0JBQUksOEJBQUk7YUFBUjtZQUNFLElBQUksQ0FBQyxTQUFTLENBQUMsY0FBYyxF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
 
 /***/ }),
 
@@ -14990,6 +15391,152 @@ module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f
 
 /***/ }),
 
+/***/ "./node_modules/reactive-localstorage/lib/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/reactive-localstorage/lib/index.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+Object.defineProperty(exports, "__esModule", { value: true });
+var localstorage_1 = __webpack_require__(/*! ./localstorage */ "./node_modules/reactive-localstorage/lib/localstorage.js");
+var ENV = typeof window !== 'undefined' ? window : (typeof global !== 'undefined' ? global : undefined);
+var localstorage = new localstorage_1.LocalStorage(ENV);
+if (true) {
+    if (!localstorage.supported) {
+        console.warn("You environment doesn't support localStorage");
+    }
+}
+exports.default = localstorage;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwrQ0FBNkM7QUFFN0MsSUFBTSxHQUFHLEdBQUcsT0FBTyxNQUFNLEtBQUssV0FBVyxDQUFDLENBQUMsQ0FBQyxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQ25ELE9BQU8sTUFBTSxLQUFLLFdBQVcsQ0FBQyxDQUFDLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQyxTQUFTLENBQzdCLENBQUE7QUFFdkIsSUFBTSxZQUFZLEdBQUcsSUFBSSwyQkFBWSxDQUFDLEdBQUcsQ0FBQyxDQUFBO0FBRTFDLElBQUksT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLEtBQUssWUFBWSxFQUFFO0lBQ3pDLElBQUksQ0FBQyxZQUFZLENBQUMsU0FBUyxFQUFFO1FBQzNCLE9BQU8sQ0FBQyxJQUFJLENBQUMsOENBQThDLENBQUMsQ0FBQTtLQUM3RDtDQUNGO0FBRUQsa0JBQWUsWUFBWSxDQUFBIn0=
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/reactive-localstorage/lib/localstorage.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/reactive-localstorage/lib/localstorage.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __values = (this && this.__values) || function (o) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+    if (m) return m.call(o);
+    return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var LocalStorage = /** @class */ (function () {
+    function LocalStorage(window, storage) {
+        var _this = this;
+        this._events = {};
+        if (window) {
+            this.supported = true;
+        }
+        else {
+            this.supported = false;
+            window = new Window();
+        }
+        this.storage = storage || window.localStorage;
+        listen(window, function (_a) {
+            var key = _a.key, newValue = _a.newValue;
+            if (!key)
+                return;
+            _this.feed(key, newValue);
+        });
+    }
+    Object.defineProperty(LocalStorage.prototype, "length", {
+        get: function () {
+            return this.storage.length;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    LocalStorage.prototype.key = function (index) {
+        return this.storage.key(index);
+    };
+    LocalStorage.prototype.getItem = function (key) {
+        return this.storage.getItem(key);
+    };
+    LocalStorage.prototype.setItem = function (key, value) {
+        this.storage.setItem(key, value);
+        this.emit('change', key, value);
+    };
+    LocalStorage.prototype.removeItem = function (key) {
+        this.storage.removeItem(key);
+        this.emit('change', key, null);
+    };
+    LocalStorage.prototype.clear = function () {
+        this.storage.clear();
+    };
+    LocalStorage.prototype.on = function (name, fn) {
+        var set = this._events[name];
+        if (!set) {
+            this._events[name] = set = new Set();
+        }
+        set.add(fn);
+    };
+    LocalStorage.prototype.off = function (name, fn) {
+        var set = this._events[name];
+        if (set) {
+            set.delete(fn);
+        }
+    };
+    LocalStorage.prototype.feed = function (key, newValue) {
+        this.emit('change', key, newValue);
+    };
+    LocalStorage.prototype.emit = function (name) {
+        var args = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            args[_i - 1] = arguments[_i];
+        }
+        var e_1, _a;
+        var set = this._events[name];
+        if (set) {
+            try {
+                for (var _b = __values(set.values()), _c = _b.next(); !_c.done; _c = _b.next()) {
+                    var fn = _c.value;
+                    fn.apply(null, args);
+                }
+            }
+            catch (e_1_1) { e_1 = { error: e_1_1 }; }
+            finally {
+                try {
+                    if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+                }
+                finally { if (e_1) throw e_1.error; }
+            }
+        }
+    };
+    return LocalStorage;
+}());
+exports.LocalStorage = LocalStorage;
+function listen(target, cb) {
+    if (target.addEventListener) {
+        target.addEventListener('storage', cb, true);
+    }
+    else if (target.attachEvent) {
+        target.attachEvent('storage', cb);
+    }
+    else {
+        return false;
+    }
+    return true;
+}
+exports.listen = listen;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibG9jYWxzdG9yYWdlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL2xvY2Fsc3RvcmFnZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFBQTtJQVFFLHNCQUFZLE1BQWUsRUFBRSxPQUFpQjtRQUE5QyxpQkFZQztRQWhCUyxZQUFPLEdBRWIsRUFBRSxDQUFBO1FBR0osSUFBSSxNQUFNLEVBQUU7WUFDVixJQUFJLENBQUMsU0FBUyxHQUFHLElBQUksQ0FBQTtTQUN0QjthQUFNO1lBQ0wsSUFBSSxDQUFDLFNBQVMsR0FBRyxLQUFLLENBQUE7WUFDdEIsTUFBTSxHQUFHLElBQUksTUFBTSxFQUFFLENBQUE7U0FDdEI7UUFDRCxJQUFJLENBQUMsT0FBTyxHQUFHLE9BQU8sSUFBSSxNQUFNLENBQUMsWUFBWSxDQUFBO1FBQzdDLE1BQU0sQ0FBQyxNQUFNLEVBQUUsVUFBQyxFQUFpQjtnQkFBZixZQUFHLEVBQUUsc0JBQVE7WUFDN0IsSUFBSSxDQUFDLEdBQUc7Z0JBQUUsT0FBTTtZQUNoQixLQUFJLENBQUMsSUFBSSxDQUFDLEdBQUcsRUFBRSxRQUFRLENBQUMsQ0FBQTtRQUMxQixDQUFDLENBQUMsQ0FBQTtJQUNKLENBQUM7SUFFRCxzQkFBSSxnQ0FBTTthQUFWO1lBQ0UsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLE1BQU0sQ0FBQTtRQUM1QixDQUFDOzs7T0FBQTtJQUVELDBCQUFHLEdBQUgsVUFBSSxLQUFhO1FBQ2YsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxLQUFLLENBQUMsQ0FBQTtJQUNoQyxDQUFDO0lBRUQsOEJBQU8sR0FBUCxVQUFRLEdBQVc7UUFDakIsT0FBTyxJQUFJLENBQUMsT0FBTyxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQTtJQUNsQyxDQUFDO0lBRUQsOEJBQU8sR0FBUCxVQUFRLEdBQVcsRUFBRSxLQUFhO1FBQ2hDLElBQUksQ0FBQyxPQUFPLENBQUMsT0FBTyxDQUFDLEdBQUcsRUFBRSxLQUFLLENBQUMsQ0FBQTtRQUNoQyxJQUFJLENBQUMsSUFBSSxDQUFDLFFBQVEsRUFBRSxHQUFHLEVBQUUsS0FBSyxDQUFDLENBQUE7SUFDakMsQ0FBQztJQUVELGlDQUFVLEdBQVYsVUFBVyxHQUFXO1FBQ3BCLElBQUksQ0FBQyxPQUFPLENBQUMsVUFBVSxDQUFDLEdBQUcsQ0FBQyxDQUFBO1FBQzVCLElBQUksQ0FBQyxJQUFJLENBQUMsUUFBUSxFQUFFLEdBQUcsRUFBRSxJQUFJLENBQUMsQ0FBQTtJQUNoQyxDQUFDO0lBRUQsNEJBQUssR0FBTDtRQUNFLElBQUksQ0FBQyxPQUFPLENBQUMsS0FBSyxFQUFFLENBQUE7SUFDdEIsQ0FBQztJQUVELHlCQUFFLEdBQUYsVUFBaUQsSUFBTyxFQUFFLEVBQW1DO1FBQzNGLElBQUksR0FBRyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUE7UUFDNUIsSUFBSSxDQUFDLEdBQUcsRUFBRTtZQUNSLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLEdBQUcsR0FBRyxHQUFHLElBQUksR0FBRyxFQUFFLENBQUE7U0FDckM7UUFDRCxHQUFHLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxDQUFBO0lBQ2IsQ0FBQztJQUVELDBCQUFHLEdBQUgsVUFBa0QsSUFBTyxFQUFFLEVBQW1DO1FBQzVGLElBQU0sR0FBRyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUE7UUFDOUIsSUFBSSxHQUFHLEVBQUU7WUFDUCxHQUFHLENBQUMsTUFBTSxDQUFDLEVBQUUsQ0FBQyxDQUFBO1NBQ2Y7SUFDSCxDQUFDO0lBRUQsMkJBQUksR0FBSixVQUFLLEdBQVcsRUFBRSxRQUF1QjtRQUN2QyxJQUFJLENBQUMsSUFBSSxDQUFDLFFBQVEsRUFBRSxHQUFHLEVBQUUsUUFBUSxDQUFDLENBQUE7SUFDcEMsQ0FBQztJQUVTLDJCQUFJLEdBQWQsVUFDRSxJQUFPO1FBQ1AsY0FBc0Y7YUFBdEYsVUFBc0YsRUFBdEYscUJBQXNGLEVBQXRGLElBQXNGO1lBQXRGLDZCQUFzRjs7O1FBRXRGLElBQU0sR0FBRyxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLENBQUE7UUFDOUIsSUFBSSxHQUFHLEVBQUU7O2dCQUNQLEtBQWlCLElBQUEsS0FBQSxTQUFBLEdBQUcsQ0FBQyxNQUFNLEVBQUUsQ0FBQSxnQkFBQSw0QkFBRTtvQkFBMUIsSUFBTSxFQUFFLFdBQUE7b0JBQ1gsRUFBRSxDQUFDLEtBQUssQ0FBQyxJQUFJLEVBQUUsSUFBSSxDQUFDLENBQUE7aUJBQ3JCOzs7Ozs7Ozs7U0FDRjtJQUNILENBQUM7SUFDSCxtQkFBQztBQUFELENBQUMsQUE5RUQsSUE4RUM7QUE5RVksb0NBQVk7QUFvRnpCLFNBQWdCLE1BQU0sQ0FBQyxNQUFjLEVBQUUsRUFBd0Q7SUFDN0YsSUFBSSxNQUFNLENBQUMsZ0JBQWdCLEVBQUU7UUFDM0IsTUFBTSxDQUFDLGdCQUFnQixDQUFDLFNBQVMsRUFBRSxFQUFFLEVBQUUsSUFBSSxDQUFDLENBQUE7S0FDN0M7U0FBTSxJQUFJLE1BQU0sQ0FBQyxXQUFXLEVBQUU7UUFDN0IsTUFBTSxDQUFDLFdBQVcsQ0FBQyxTQUFTLEVBQUUsRUFBRSxDQUFDLENBQUE7S0FDbEM7U0FBTTtRQUNMLE9BQU8sS0FBSyxDQUFBO0tBQ2I7SUFDRCxPQUFPLElBQUksQ0FBQTtBQUNiLENBQUM7QUFURCx3QkFTQyJ9
+
+/***/ }),
+
 /***/ "./node_modules/regenerator-runtime/runtime.js":
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
@@ -16661,9 +17208,15 @@ function MyApp(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
+/* harmony import */ var mobx_localstorage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! mobx-localstorage */ "./node_modules/mobx-localstorage/lib/index.js");
+/* harmony import */ var mobx_localstorage__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(mobx_localstorage__WEBPACK_IMPORTED_MODULE_4__);
+
+
 
 
 
@@ -16672,27 +17225,28 @@ var MovieStore =
 /*#__PURE__*/
 function () {
   function MovieStore() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, MovieStore);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, MovieStore);
 
     this.movielist = [];
-    this.temp = 1;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(MovieStore, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(MovieStore, [{
     key: "set_movies",
     value: function set_movies(array) {
       console.log('set movie', array);
       this.movielist = array || [];
     }
   }, {
-    key: "add_movies",
-    value: function add_movies(object) {
+    key: "add_movie",
+    value: function add_movie(object) {
       this.movielist.push(object);
+      mobx_localstorage__WEBPACK_IMPORTED_MODULE_4___default.a.setItem('favorites', _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.movielist));
     }
   }, {
-    key: "setTemp",
-    value: function setTemp(i) {
-      this.temp = i;
+    key: "remove_movie",
+    value: function remove_movie(index) {
+      this.movielist.splice(this.movielist.indexOf(index), 1);
+      mobx_localstorage__WEBPACK_IMPORTED_MODULE_4___default.a.setItem('favorites', _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(this.movielist));
     }
   }, {
     key: "count",
@@ -16704,11 +17258,12 @@ function () {
   return MovieStore;
 }();
 
-Object(mobx__WEBPACK_IMPORTED_MODULE_2__["decorate"])(MovieStore, {
-  movielist: mobx__WEBPACK_IMPORTED_MODULE_2__["observable"],
-  count: mobx__WEBPACK_IMPORTED_MODULE_2__["computed"],
-  set_movies: mobx__WEBPACK_IMPORTED_MODULE_2__["action"],
-  add_movies: mobx__WEBPACK_IMPORTED_MODULE_2__["action"]
+Object(mobx__WEBPACK_IMPORTED_MODULE_3__["decorate"])(MovieStore, {
+  movielist: mobx__WEBPACK_IMPORTED_MODULE_3__["observable"],
+  count: mobx__WEBPACK_IMPORTED_MODULE_3__["computed"],
+  set_movies: mobx__WEBPACK_IMPORTED_MODULE_3__["action"],
+  add_movies: mobx__WEBPACK_IMPORTED_MODULE_3__["action"],
+  remove_movie: mobx__WEBPACK_IMPORTED_MODULE_3__["action"]
 });
 var store = new MovieStore();
 /* harmony default export */ __webpack_exports__["default"] = (store);

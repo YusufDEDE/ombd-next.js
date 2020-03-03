@@ -1,25 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { inject, observer } from 'mobx-react';
 import localStorage from 'mobx-localstorage';
 import Card from '../components/Card';
 
-@inject('store')
-@observer
-
-class Mob extends React.Component {
-  componentDidMount() {
-    const {store} = this.props;
-    if(localStorage.getItem('favorites')){
-      store.set_movies(JSON.parse(localStorage.getItem('favorites')));
-    }
-  }
+function Mob(props) {
   
+    useEffect(() => {
+      const {store} = props;
+      if(localStorage.getItem('favorites')){
+        store.set_movies(JSON.parse(localStorage.getItem('favorites')));
+      }   
+    }, []);
 
-  render() {
-    const {store} = this.props;
+    const {store} = props;
     const {movielist} = store;
-
+    
     return (
       <div className="container">
         <center>
@@ -29,7 +25,8 @@ class Mob extends React.Component {
         </center>
       </div>
     )
-  }
+  
 }
 
-export default Mob;
+export default inject('store')(observer(Mob));
+

@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { observer, inject } from 'mobx-react';
 
-const Navbar = () => (
+const Navbar = (props) => (
     <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
         <div className="container">
             <a className="navbar-brand" href="/">Ombd WebApp</a>
@@ -13,7 +14,7 @@ const Navbar = () => (
                     </li>
                     <li className="nav-item">
                         <Link href="/favorites">
-                            <a className="nav-link">Favorites</a>
+                            <a className="nav-link">Favorites( <b>{props.store.count}</b> )</a>
                         </Link>
                     </li>
                 </ul>
@@ -23,4 +24,4 @@ const Navbar = () => (
 );
 
 
-export default Navbar;
+export default inject('store')(observer(Navbar));

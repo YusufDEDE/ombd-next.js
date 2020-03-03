@@ -106,23 +106,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx-react */ "mobx-react");
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(mobx_react__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/home/commodore64/ombd-next/components/Navbar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Navbar = () => __jsx("nav", {
+
+const Navbar = props => __jsx("nav", {
   className: "navbar navbar-expand navbar-dark bg-dark mb-4",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4
+    lineNumber: 5
   },
   __self: undefined
 }, __jsx("div", {
   className: "container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5
+    lineNumber: 6
   },
   __self: undefined
 }, __jsx("a", {
@@ -130,68 +133,74 @@ const Navbar = () => __jsx("nav", {
   href: "/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 7
   },
   __self: undefined
 }, "Ombd WebApp"), __jsx("div", {
   className: "collapse navbar-collapse",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 8
   },
   __self: undefined
 }, __jsx("ul", {
   className: "navbar-nav ml-auto",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 9
   },
   __self: undefined
 }, __jsx("li", {
   className: "nav-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 10
   },
   __self: undefined
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
   href: "/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 11
   },
   __self: undefined
 }, __jsx("a", {
   className: "nav-link",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 12
   },
   __self: undefined
 }, "Home"))), __jsx("li", {
   className: "nav-item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 14
+    lineNumber: 15
   },
   __self: undefined
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
   href: "/favorites",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 16
   },
   __self: undefined
 }, __jsx("a", {
   className: "nav-link",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 17
   },
   __self: undefined
-}, "Favorites")))))));
+}, "Favorites( ", __jsx("b", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}, props.store.count), " )")))))));
 
-/* harmony default export */ __webpack_exports__["default"] = (Navbar);
+/* harmony default export */ __webpack_exports__["default"] = (Object(mobx_react__WEBPACK_IMPORTED_MODULE_2__["inject"])('store')(Object(mobx_react__WEBPACK_IMPORTED_MODULE_2__["observer"])(Navbar)));
 
 /***/ }),
 
@@ -2000,12 +2009,14 @@ function MyApp({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mobx */ "mobx");
 /* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mobx__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var mobx_localstorage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mobx-localstorage */ "mobx-localstorage");
+/* harmony import */ var mobx_localstorage__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(mobx_localstorage__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 class MovieStore {
   constructor() {
     this.movielist = [];
-    this.temp = 1;
   }
 
   get count() {
@@ -2017,12 +2028,14 @@ class MovieStore {
     this.movielist = array || [];
   }
 
-  add_movies(object) {
+  add_movie(object) {
     this.movielist.push(object);
+    mobx_localstorage__WEBPACK_IMPORTED_MODULE_1___default.a.setItem('favorites', JSON.stringify(this.movielist));
   }
 
-  setTemp(i) {
-    this.temp = i;
+  remove_movie(index) {
+    this.movielist.splice(this.movielist.indexOf(index), 1);
+    mobx_localstorage__WEBPACK_IMPORTED_MODULE_1___default.a.setItem('favorites', JSON.stringify(this.movielist));
   }
 
 }
@@ -2031,7 +2044,8 @@ Object(mobx__WEBPACK_IMPORTED_MODULE_0__["decorate"])(MovieStore, {
   movielist: mobx__WEBPACK_IMPORTED_MODULE_0__["observable"],
   count: mobx__WEBPACK_IMPORTED_MODULE_0__["computed"],
   set_movies: mobx__WEBPACK_IMPORTED_MODULE_0__["action"],
-  add_movies: mobx__WEBPACK_IMPORTED_MODULE_0__["action"]
+  add_movies: mobx__WEBPACK_IMPORTED_MODULE_0__["action"],
+  remove_movie: mobx__WEBPACK_IMPORTED_MODULE_0__["action"]
 });
 const store = new MovieStore();
 /* harmony default export */ __webpack_exports__["default"] = (store);
@@ -2113,6 +2127,17 @@ module.exports = require("core-js/library/fn/weak-map");
 /***/ (function(module, exports) {
 
 module.exports = require("mobx");
+
+/***/ }),
+
+/***/ "mobx-localstorage":
+/*!************************************!*\
+  !*** external "mobx-localstorage" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("mobx-localstorage");
 
 /***/ }),
 

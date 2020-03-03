@@ -31,7 +31,7 @@ function Card({movie, index, addFavorite, delFavorite}) {
                       <button className="btn btn-primary"style={{display:favstatus ? "":"none"}} onClick={() => addFavorite(movie)}>
                         Favorite
                       </button>
-                      <button className="btn btn-primary"style={{display:favstatus ? "none":""}} onClick={() => delFavorite(movie.imdbID)}>
+                      <button className="btn btn-primary"style={{display:favstatus ? "none":""}} onClick={() => delFavorite(movie)}>
                         Del Favorite
                       </button>
                   </p>
