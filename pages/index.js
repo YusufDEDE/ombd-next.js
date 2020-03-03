@@ -3,7 +3,6 @@ import localStorage from 'mobx-localstorage';
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import {inject, observer} from 'mobx-react';
-import css from '../style.scss';
 
 
 function Index(props) {
@@ -26,7 +25,7 @@ function Index(props) {
   const handleSubmit = async e => {
     e.preventDefault();
     if(!value) return;
-    const res = await fetch(`http://www.omdbapi.com/?s=${value}&apikey=8ae8b189`);
+    const res = await fetch(`http://www.omdbapi.com/?s=${value}&y=${value}&apikey=8ae8b189`);
     const data = await res.json();
     
     data.Response === "True" ? setResult(data.Search) : alert("Movie not found!");
@@ -48,7 +47,7 @@ function Index(props) {
               <input type="text" className="form-control" placeholder="Title" onChange={e => setValue(e.target.value)}/>
             </div>
             <div className="column">
-              <input type="text" className="form-control" placeholder="Year" />
+              <input type="text" className="form-control" placeholder="Year" onChange={e => setValue(e.target.value)}/>
             </div>
             <div className="column">
               <select id="inputState" className="form-control">
@@ -69,6 +68,7 @@ function Index(props) {
               movie={movie}
               addFavorite={addFavorite}
               delFavorite={delFavorite}
+              favorited={store.movielist}
               /> 
             ))}
           </div>
@@ -80,7 +80,6 @@ function Index(props) {
             
           }
         }
-
         `}</style>
     </div>
     );

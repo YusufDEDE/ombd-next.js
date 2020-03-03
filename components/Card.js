@@ -1,26 +1,23 @@
 import localStorage from 'mobx-localstorage';
 import React, { useState, useEffect } from 'react';
 import css from '../style.scss';
+import {inject, observer} from 'mobx-react';
 
-function Card({movie, index, addFavorite, delFavorite}) {
+function Card({store, movie, index, addFavorite, delFavorite}) {
 
     const [favorite, setFavorite] = useState([]);
-    const [favstatus, setFavStatus] = useState(true);
-    
+    const [favCond, setFavcond] = useState(false);
+
+
+    const {movielist} = store;
+
     useEffect(() => {
       if(favorite !== null){
         setFavorite(JSON.parse(localStorage.getItem('favorites')));
       }
+      movielist.map((item) => item.Poster === movie.Poster  ? setFavcond(true) : null)
       
-    }, []);
-
-    if(Array.isArray(favorite)){
-      let isFav = favorite.find(items => movie.imdbID === items.imdbID);
-      if(isFav && favstatus !== false) {
-          setFavStatus(false);
-      }
-    }
-    
+    }, [movielist]);
    
     return <div className="column" key={movie.id} id="poster">
             <div className="card text-white bg-dark mb-3">
@@ -30,13 +27,15 @@ function Card({movie, index, addFavorite, delFavorite}) {
                     <img src={movie.Poster} id="image"/>
                     <hr />
                     <p className="card-text container">
-                      
-                      <button id="win" className="btn btn-primary btn-sm" style={{display:favstatus ? "":"none"}} onClick={() => addFavorite(movie)}>
-                        Favorite
-                      </button>
-                      <button className="btn btn-primary btn-sm" style={{display:favstatus ? "none":""}} onClick={() => delFavorite(movie)}>
-                        Del Favorite
-                      </button>
+                    { favCond ?  ( 
+                      <button className="btn btn-primary btn-sm"  onClick={() => {
+                        delFavorite(movie); 
+                        setFavcond(false)}}> 
+                        Del Favorite</button>
+                    ) : (<button className="btn btn-primary btn-sm" onClick={() => {
+                      addFavorite(movie);
+                      setFavcond(true);
+                      }}>Favorite</button>) }
                   </p>
                   </div>
                  
@@ -71,8 +70,4 @@ function Card({movie, index, addFavorite, delFavorite}) {
         </div>;
 }
 
-export default Card;
-
-
-//<button style={{display:favstatus ? "none":""}} onClick={() => addFavorite(search)}>Fav</button>
-//<button onClick={() => check(search)}>Ce</button>
+export default inject('store')(observer(Card));
