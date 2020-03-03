@@ -1,0 +1,13 @@
+.example {
+    font-size: 16px;
+    margin: 2% 0% -2% -2%;
+    padding: 6px 0px 0px 14px;
+    
+    &:hover {
+        color:greenyellow;
+        font-size: 18px;
+    }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

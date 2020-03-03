@@ -3,16 +3,14 @@ import localStorage from 'mobx-localstorage';
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
 import {inject, observer} from 'mobx-react';
-import store from '../store';
+import css from '../style.scss';
 
 
 function Index(props) {
 
   const [value, setValue] = useState();
   const [result, setResult] = useState([]);
-  const [favorite, setFavorite] = useState([]);
 
-  
   const {store} = props;
 
   const addFavorite = object => {
@@ -21,13 +19,8 @@ function Index(props) {
   };
 
   const delFavorite = index => {
-      const newFav = [...favorite];
-      newFav.splice(index, 1);
-      setFavorite(newFav);
-      
-      localStorage.setItem('favorites', JSON.stringify(newFav));
-      console.log(JSON.parse(localStorage.getItem('favorites')));
-      
+      store.remove_movie(index);
+      console.log(JSON.parse(localStorage.getItem('favorites')));  
   };
 
   const handleSubmit = async e => {
@@ -36,11 +29,9 @@ function Index(props) {
     const res = await fetch(`http://www.omdbapi.com/?s=${value}&apikey=8ae8b189`);
     const data = await res.json();
     
-    
     data.Response === "True" ? setResult(data.Search) : alert("Movie not found!");
 
     console.log(data);
-    
   }
 
   useEffect(() => {
