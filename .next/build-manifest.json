@@ -21,11 +21,11 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/favorites": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/mob": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

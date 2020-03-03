@@ -1,10 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
+import { Provider } from 'mobx-react'
+import store from '../store';
 
 function MyApp({ Component, pageProps }) {
     return (
         <div>
+          <Provider store={store}>
             <Head>
                 <title>Ombd Movie WebApp</title>
                 <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css" />
@@ -12,35 +15,7 @@ function MyApp({ Component, pageProps }) {
             </Head>
             <Navbar />
             <Component {...pageProps} />
-            <style jsx>{`
-            .form-control {
-                margin-right:12px;
-                
-              }
-              .card-header {
-                font-size: 14px;
-              }
-              #image {
-                width: 100%;
-                height: 300px
-              }
-              #poster {
-                padding: 0 10px;
-              }
-              .card {
-                width:250px;
-                height:420px;
-                text-align: center;
-              }
-              @media screen and (max-width: 600px) {
-              .column {
-                width: 100%;
-                display: block;
-                margin-bottom: 20px;
-              }
-            }
-
-            `}</style>
+          </Provider>
         </div>
     );
   }

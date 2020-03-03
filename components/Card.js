@@ -26,16 +26,17 @@ function Card({movie, index, addFavorite, delFavorite}) {
                     <h4 className="card-title"></h4>
                     <img src={movie.Poster} id="image"/>
                     <small>{movie.Type} </small>
-                  </div>
-                  <p className="card-text">
+                    <p className="card-text container">
                       
-                      <button className="btn-primary"style={{display:favstatus ? "":"none"}} onClick={() => addFavorite(movie)}>
+                      <button className="btn btn-primary"style={{display:favstatus ? "":"none"}} onClick={() => addFavorite(movie)}>
                         Favorite
                       </button>
-                      <button className="btn-primary"style={{display:favstatus ? "none":""}} onClick={() => delFavorite(movie.imdbID)}>
+                      <button className="btn btn-primary"style={{display:favstatus ? "none":""}} onClick={() => delFavorite(movie.imdbID)}>
                         Del Favorite
                       </button>
                   </p>
+                  </div>
+                 
                   
             </div>
             <style jsx>{`

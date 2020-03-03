@@ -107,11 +107,11 @@ function Card(_ref) {
       lineNumber: 28
     },
     __self: this
-  }, movie.Type, " ")), __jsx("p", {
-    className: "jsx-3647075915" + " " + "card-text",
+  }, movie.Type, " "), __jsx("p", {
+    className: "jsx-3647075915" + " " + "card-text container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   }, __jsx("button", {
@@ -121,10 +121,10 @@ function Card(_ref) {
     onClick: function onClick() {
       return addFavorite(movie);
     },
-    className: "jsx-3647075915" + " " + "btn-primary",
+    className: "jsx-3647075915" + " " + "btn btn-primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, "Favorite"), __jsx("button", {
@@ -134,16 +134,16 @@ function Card(_ref) {
     onClick: function onClick() {
       return delFavorite(movie.imdbID);
     },
-    className: "jsx-3647075915" + " " + "btn-primary",
+    className: "jsx-3647075915" + " " + "btn btn-primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
-  }, "Del Favorite"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Del Favorite")))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
     id: "3647075915",
     __self: this
-  }, ".card-header.jsx-3647075915{font-size:14px;}#image.jsx-3647075915{width:100%;height:300px;}#poster.jsx-3647075915{padding:0 10px;}.card.jsx-3647075915{width:250px;height:420px;text-align:center;}@media screen and (max-width:600px){.column.jsx-3647075915{width:100%;display:block;margin-bottom:20px;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2NvbW1vZG9yZTY0L29tYmQtbmV4dC9jb21wb25lbnRzL0NhcmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBd0N3QixBQUdvQyxBQUdKLEFBSUksQUFHSixBQU1BLFdBWGQsQUFZaUIsQ0FORixHQVZkLEFBT0EsU0FIQSxDQU9vQixBQU1DLGtCQUxyQixDQU1BIiwiZmlsZSI6Ii9ob21lL2NvbW1vZG9yZTY0L29tYmQtbmV4dC9jb21wb25lbnRzL0NhcmQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgbG9jYWxTdG9yYWdlIGZyb20gJ21vYngtbG9jYWxzdG9yYWdlJztcbmltcG9ydCBSZWFjdCwgeyB1c2VTdGF0ZSwgdXNlRWZmZWN0IH0gZnJvbSAncmVhY3QnO1xuXG5mdW5jdGlvbiBDYXJkKHttb3ZpZSwgaW5kZXgsIGFkZEZhdm9yaXRlLCBkZWxGYXZvcml0ZX0pIHtcblxuICAgIGNvbnN0IFtmYXZvcml0ZSwgc2V0RmF2b3JpdGVdID0gdXNlU3RhdGUoW10pO1xuICAgIGNvbnN0IFtmYXZzdGF0dXMsIHNldEZhdlN0YXR1c10gPSB1c2VTdGF0ZSh0cnVlKTtcbiAgICBcbiAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgaWYoZmF2b3JpdGUgIT09IG51bGwpe1xuICAgICAgICBzZXRGYXZvcml0ZShKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdmYXZvcml0ZXMnKSkpO1xuICAgICAgfVxuICAgIH0sIFtdKTtcblxuICAgIGlmKEFycmF5LmlzQXJyYXkoZmF2b3JpdGUpKXtcbiAgICAgICAgbGV0IGlzRmF2ID0gZmF2b3JpdGUuZmluZChpdGVtcyA9PiBtb3ZpZS5pbWRiSUQgPT09IGl0ZW1zLmltZGJJRCk7XG4gICAgICAgIGlmKGlzRmF2ICYmIGZhdnN0YXR1cyAhPT0gZmFsc2UpIHtcbiAgICAgICAgICAgIHNldEZhdlN0YXR1cyhmYWxzZSk7XG4gICAgICAgIH1cbiAgICB9XG4gICBcbiAgICByZXR1cm4gPGRpdiBjbGFzc05hbWU9XCJjb2x1bW5cIiBrZXk9e21vdmllLmlkfSBpZD1cInBvc3RlclwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYXJkIHRleHQtd2hpdGUgYmctZGFyayBtYi0zXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYXJkLWhlYWRlclwiPnttb3ZpZS5UaXRsZX0gKHttb3ZpZS5ZZWFyfSk8L2Rpdj5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgICAgICAgIDxoNCBjbGFzc05hbWU9XCJjYXJkLXRpdGxlXCI+PC9oND5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e21vdmllLlBvc3Rlcn0gaWQ9XCJpbWFnZVwiLz5cbiAgICAgICAgICAgICAgICAgICAgPHNtYWxsPnttb3ZpZS5UeXBlfSA8L3NtYWxsPlxuICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJjYXJkLXRleHRcIj5cbiAgICAgICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzTmFtZT1cImJ0bi1wcmltYXJ5XCJzdHlsZT17e2Rpc3BsYXk6ZmF2c3RhdHVzID8gXCJcIjpcIm5vbmVcIn19IG9uQ2xpY2s9eygpID0+IGFkZEZhdm9yaXRlKG1vdmllKX0+XG4gICAgICAgICAgICAgICAgICAgICAgICBGYXZvcml0ZVxuICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnRuLXByaW1hcnlcInN0eWxlPXt7ZGlzcGxheTpmYXZzdGF0dXMgPyBcIm5vbmVcIjpcIlwifX0gb25DbGljaz17KCkgPT4gZGVsRmF2b3JpdGUobW92aWUuaW1kYklEKX0+XG4gICAgICAgICAgICAgICAgICAgICAgICBEZWwgRmF2b3JpdGVcbiAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgICAuY2FyZC1oZWFkZXIge1xuICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAjaW1hZ2Uge1xuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAzMDBweFxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgI3Bvc3RlciB7XG4gICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDAgMTBweDtcbiAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgIC5jYXJkIHtcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg6MjUwcHg7XG4gICAgICAgICAgICAgICAgICAgIGhlaWdodDo0MjBweDtcbiAgICAgICAgICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpIHtcbiAgICAgICAgICAgICAgICAgIC5jb2x1bW4ge1xuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH1cbiAgICAgICAgICAgIDwvc3R5bGU+XG4gICAgICAgICAgICBcbiAgICAgICAgPC9kaXY+O1xufVxuXG5leHBvcnQgZGVmYXVsdCBDYXJkO1xuXG5cbi8vPGJ1dHRvbiBzdHlsZT17e2Rpc3BsYXk6ZmF2c3RhdHVzID8gXCJub25lXCI6XCJcIn19IG9uQ2xpY2s9eygpID0+IGFkZEZhdm9yaXRlKHNlYXJjaCl9PkZhdjwvYnV0dG9uPlxuLy88YnV0dG9uIG9uQ2xpY2s9eygpID0+IGNoZWNrKHNlYXJjaCl9PkNlPC9idXR0b24+Il19 */\n/*@ sourceURL=/home/commodore64/ombd-next/components/Card.js */"));
+  }, ".card-header.jsx-3647075915{font-size:14px;}#image.jsx-3647075915{width:100%;height:300px;}#poster.jsx-3647075915{padding:0 10px;}.card.jsx-3647075915{width:250px;height:420px;text-align:center;}@media screen and (max-width:600px){.column.jsx-3647075915{width:100%;display:block;margin-bottom:20px;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2NvbW1vZG9yZTY0L29tYmQtbmV4dC9jb21wb25lbnRzL0NhcmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeUN3QixBQUdvQyxBQUdKLEFBSUksQUFHSixBQU1BLFdBWGQsQUFZaUIsQ0FORixHQVZkLEFBT0EsU0FIQSxDQU9vQixBQU1DLGtCQUxyQixDQU1BIiwiZmlsZSI6Ii9ob21lL2NvbW1vZG9yZTY0L29tYmQtbmV4dC9jb21wb25lbnRzL0NhcmQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgbG9jYWxTdG9yYWdlIGZyb20gJ21vYngtbG9jYWxzdG9yYWdlJztcbmltcG9ydCBSZWFjdCwgeyB1c2VTdGF0ZSwgdXNlRWZmZWN0IH0gZnJvbSAncmVhY3QnO1xuXG5mdW5jdGlvbiBDYXJkKHttb3ZpZSwgaW5kZXgsIGFkZEZhdm9yaXRlLCBkZWxGYXZvcml0ZX0pIHtcblxuICAgIGNvbnN0IFtmYXZvcml0ZSwgc2V0RmF2b3JpdGVdID0gdXNlU3RhdGUoW10pO1xuICAgIGNvbnN0IFtmYXZzdGF0dXMsIHNldEZhdlN0YXR1c10gPSB1c2VTdGF0ZSh0cnVlKTtcbiAgICBcbiAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgaWYoZmF2b3JpdGUgIT09IG51bGwpe1xuICAgICAgICBzZXRGYXZvcml0ZShKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdmYXZvcml0ZXMnKSkpO1xuICAgICAgfVxuICAgIH0sIFtdKTtcblxuICAgIGlmKEFycmF5LmlzQXJyYXkoZmF2b3JpdGUpKXtcbiAgICAgICAgbGV0IGlzRmF2ID0gZmF2b3JpdGUuZmluZChpdGVtcyA9PiBtb3ZpZS5pbWRiSUQgPT09IGl0ZW1zLmltZGJJRCk7XG4gICAgICAgIGlmKGlzRmF2ICYmIGZhdnN0YXR1cyAhPT0gZmFsc2UpIHtcbiAgICAgICAgICAgIHNldEZhdlN0YXR1cyhmYWxzZSk7XG4gICAgICAgIH1cbiAgICB9XG4gICBcbiAgICByZXR1cm4gPGRpdiBjbGFzc05hbWU9XCJjb2x1bW5cIiBrZXk9e21vdmllLmlkfSBpZD1cInBvc3RlclwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYXJkIHRleHQtd2hpdGUgYmctZGFyayBtYi0zXCI+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYXJkLWhlYWRlclwiPnttb3ZpZS5UaXRsZX0gKHttb3ZpZS5ZZWFyfSk8L2Rpdj5cbiAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgICAgICAgIDxoNCBjbGFzc05hbWU9XCJjYXJkLXRpdGxlXCI+PC9oND5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e21vdmllLlBvc3Rlcn0gaWQ9XCJpbWFnZVwiLz5cbiAgICAgICAgICAgICAgICAgICAgPHNtYWxsPnttb3ZpZS5UeXBlfSA8L3NtYWxsPlxuICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJjYXJkLXRleHQgY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidG4gYnRuLXByaW1hcnlcInN0eWxlPXt7ZGlzcGxheTpmYXZzdGF0dXMgPyBcIlwiOlwibm9uZVwifX0gb25DbGljaz17KCkgPT4gYWRkRmF2b3JpdGUobW92aWUpfT5cbiAgICAgICAgICAgICAgICAgICAgICAgIEZhdm9yaXRlXG4gICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzc05hbWU9XCJidG4gYnRuLXByaW1hcnlcInN0eWxlPXt7ZGlzcGxheTpmYXZzdGF0dXMgPyBcIm5vbmVcIjpcIlwifX0gb25DbGljaz17KCkgPT4gZGVsRmF2b3JpdGUobW92aWUuaW1kYklEKX0+XG4gICAgICAgICAgICAgICAgICAgICAgICBEZWwgRmF2b3JpdGVcbiAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8c3R5bGUganN4PntgXG4gICAgICAgICAgICAgICAgICAuY2FyZC1oZWFkZXIge1xuICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAjaW1hZ2Uge1xuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiAzMDBweFxuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgI3Bvc3RlciB7XG4gICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDAgMTBweDtcbiAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgIC5jYXJkIHtcbiAgICAgICAgICAgICAgICAgICAgd2lkdGg6MjUwcHg7XG4gICAgICAgICAgICAgICAgICAgIGhlaWdodDo0MjBweDtcbiAgICAgICAgICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpIHtcbiAgICAgICAgICAgICAgICAgIC5jb2x1bW4ge1xuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH1cbiAgICAgICAgICAgIDwvc3R5bGU+XG4gICAgICAgICAgICBcbiAgICAgICAgPC9kaXY+O1xufVxuXG5leHBvcnQgZGVmYXVsdCBDYXJkO1xuXG5cbi8vPGJ1dHRvbiBzdHlsZT17e2Rpc3BsYXk6ZmF2c3RhdHVzID8gXCJub25lXCI6XCJcIn19IG9uQ2xpY2s9eygpID0+IGFkZEZhdm9yaXRlKHNlYXJjaCl9PkZhdjwvYnV0dG9uPlxuLy88YnV0dG9uIG9uQ2xpY2s9eygpID0+IGNoZWNrKHNlYXJjaCl9PkNlPC9idXR0b24+Il19 */\n/*@ sourceURL=/home/commodore64/ombd-next/components/Card.js */"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Card); //<button style={{display:favstatus ? "none":""}} onClick={() => addFavorite(search)}>Fav</button>
@@ -195,6 +195,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ ".
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "./node_modules/core-js/library/fn/object/define-property.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js":
 /*!******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js ***!
@@ -216,6 +227,57 @@ function _arrayWithoutHoles(arr) {
 
     return arr2;
   }
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _classCallCheck; });
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _createClass; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
 }
 
 /***/ }),
@@ -344,6 +406,22 @@ var core = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-j
 var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
 module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
   return $JSON.stringify.apply($JSON, arguments);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/define-property.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/define-property.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.define-property */ "./node_modules/core-js/library/modules/es6.object.define-property.js");
+var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
+module.exports = function defineProperty(it, key, desc) {
+  return $Object.defineProperty(it, key, desc);
 };
 
 
@@ -1624,6 +1702,20 @@ addToUnscopables('entries');
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.define-property.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
+$export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f });
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.string.iterator.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.string.iterator.js ***!
@@ -2046,6 +2138,1199 @@ function parseValue(value) {
 exports.parseValue = parseValue;
 exports.default = new LocalStorage();
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLDZCQUE2RTtBQUM3RSwrREFBZ0Q7QUFFaEQ7SUFVRTtRQUFBLGlCQVlDO1FBckJELEtBQUMsTUFBTSxDQUFDLFdBQVcsQ0FBQyxHQUFHLEtBQWMsQ0FBQTtRQUU3QixjQUFTLEdBQUcsSUFBSSxHQUFHLEVBQXFDLENBQUE7UUFDeEQsZ0JBQVcsR0FBRyxJQUFJLEdBQUcsRUFBaUMsQ0FBQTtRQUN0RCxVQUFLLEdBQUcsSUFBSSxHQUFHLEVBQVUsQ0FBQTtRQUV6QixjQUFTLEdBQUcsaUJBQVUsQ0FBQyxtQkFBbUIsQ0FBQyxDQUFBO1FBQzNDLDBCQUFxQixHQUFHLEtBQUssQ0FBQTtRQUduQywrQkFBWSxDQUFDLEVBQUUsQ0FBQyxRQUFRLEVBQUUsYUFBTSxDQUFDLFVBQUMsR0FBa0IsRUFBRSxLQUFvQjtZQUN4RSxJQUFJLE9BQU8sR0FBRyxLQUFLLFFBQVEsRUFBRTtnQkFDM0IsSUFBSSxPQUFPLEtBQUssS0FBSyxRQUFRLEVBQUU7b0JBQzdCLEtBQUksQ0FBQyxJQUFJLENBQUMsR0FBRyxFQUFFLEtBQUssQ0FBQyxDQUFBO2lCQUN0QjtxQkFBTTtvQkFDTCxLQUFJLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFBO2lCQUNsQjthQUNGO2lCQUFNO2dCQUNMLEtBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQTthQUNkO1FBQ0gsQ0FBQyxDQUFDLENBQUMsQ0FBQTtJQUNMLENBQUM7SUFFRCxzQkFBSSxnQ0FBTTthQUFWO1lBQ0UsT0FBTyxJQUFJLENBQUMsSUFBSSxDQUFBO1FBQ2xCLENBQUM7OztPQUFBO0lBRUQsc0JBQUksOEJBQUk7YUFBUjtZQUNFLElBQUksQ0FBQyxTQUFTLENBQUMsY0FBYyxF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
+
+/***/ }),
+
+/***/ "./node_modules/mobx-react-lite/dist/index.module.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/mobx-react-lite/dist/index.module.js ***!
+  \***********************************************************/
+/*! exports provided: Observer, isUsingStaticRendering, observer, optimizeScheduler, useAsObservableSource, useComputed, useDisposable, useForceUpdate, useLocalStore, useObservable, useObserver, useStaticRendering */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Observer", function() { return ObserverComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isUsingStaticRendering", function() { return isUsingStaticRendering; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "observer", function() { return observer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "optimizeScheduler", function() { return optimizeScheduler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useAsObservableSource", function() { return useAsObservableSource; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useComputed", function() { return useComputed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useDisposable", function() { return useDisposable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useForceUpdate", function() { return useForceUpdate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useLocalStore", function() { return useLocalStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useObservable", function() { return useObservable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useObserver", function() { return useObserver; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStaticRendering", function() { return useStaticRendering; });
+/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+if (!react__WEBPACK_IMPORTED_MODULE_1__["useState"]) {
+    throw new Error("mobx-react-lite requires React with Hooks support");
+}
+if (!mobx__WEBPACK_IMPORTED_MODULE_0__["spy"]) {
+    throw new Error("mobx-react-lite requires mobx at least version 4 to be available");
+}
+
+function useObservable(initialValue) {
+    var observableRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null);
+    if (!observableRef.current) {
+        observableRef.current = Object(mobx__WEBPACK_IMPORTED_MODULE_0__["observable"])(initialValue);
+    }
+    return observableRef.current;
+}
+
+function useComputed(func, inputs) {
+    if (inputs === void 0) { inputs = []; }
+    var computed$1 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(function () { return Object(mobx__WEBPACK_IMPORTED_MODULE_0__["computed"])(func); }, inputs);
+    return computed$1.get();
+}
+
+var doNothingDisposer = function () {
+    // empty
+};
+/**
+ * Adds an observable effect (reaction, autorun, or anything else that returns a disposer) that will be registered upon component creation and disposed upon unmounting.
+ * Returns the generated disposer for early disposal.
+ *
+ * @export
+ * @template D
+ * @param {() => D} disposerGenerator A function that returns the disposer of the wanted effect.
+ * @param {ReadonlyArray<any>} [inputs=[]] If you want the effect to be automatically re-created when some variable(s) are changed then pass them in this array.
+ * @returns {D}
+ */
+function useDisposable(disposerGenerator, inputs) {
+    if (inputs === void 0) { inputs = []; }
+    var disposerRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null);
+    var earlyDisposedRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(false);
+    Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+        return lazyCreateDisposer(false);
+    }, inputs);
+    function lazyCreateDisposer(earlyDisposal) {
+        // ensure that we won't create a new disposer if it was early disposed
+        if (earlyDisposedRef.current) {
+            return doNothingDisposer;
+        }
+        if (!disposerRef.current) {
+            var newDisposer = disposerGenerator();
+            if (typeof newDisposer !== "function") {
+                var error = new Error("generated disposer must be a function");
+                {
+                    // tslint:disable-next-line:no-console
+                    console.error(error);
+                    return doNothingDisposer;
+                }
+            }
+            disposerRef.current = newDisposer;
+        }
+        return function () {
+            if (disposerRef.current) {
+                disposerRef.current();
+                disposerRef.current = null;
+            }
+            if (earlyDisposal) {
+                earlyDisposedRef.current = true;
+            }
+        };
+    }
+    return lazyCreateDisposer(true);
+}
+
+var globalIsUsingStaticRendering = false;
+function useStaticRendering(enable) {
+    globalIsUsingStaticRendering = enable;
+}
+function isUsingStaticRendering() {
+    return globalIsUsingStaticRendering;
+}
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function printDebugValue(v) {
+    if (!v.current) {
+        return "<unknown>";
+    }
+    return Object(mobx__WEBPACK_IMPORTED_MODULE_0__["getDependencyTree"])(v.current);
+}
+
+var EMPTY_ARRAY = [];
+function useUnmount(fn) {
+    Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () { return fn; }, EMPTY_ARRAY);
+}
+function useForceUpdate() {
+    var _a = __read(Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(0), 2), setTick = _a[1];
+    var update = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(function () {
+        setTick(function (tick) { return tick + 1; });
+    }, []);
+    return update;
+}
+function isPlainObject(value) {
+    if (!value || typeof value !== "object") {
+        return false;
+    }
+    var proto = Object.getPrototypeOf(value);
+    return !proto || proto === Object.prototype;
+}
+
+var EMPTY_OBJECT = {};
+function useObserver(fn, baseComponentName, options) {
+    if (baseComponentName === void 0) { baseComponentName = "observed"; }
+    if (options === void 0) { options = EMPTY_OBJECT; }
+    if (isUsingStaticRendering()) {
+        return fn();
+    }
+    var wantedForceUpdateHook = options.useForceUpdate || useForceUpdate;
+    var forceUpdate = wantedForceUpdateHook();
+    var reaction = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null);
+    if (!reaction.current) {
+        reaction.current = new mobx__WEBPACK_IMPORTED_MODULE_0__["Reaction"]("observer(" + baseComponentName + ")", function () {
+            forceUpdate();
+        });
+    }
+    var dispose = function () {
+        if (reaction.current && !reaction.current.isDisposed) {
+            reaction.current.dispose();
+            reaction.current = null;
+        }
+    };
+    Object(react__WEBPACK_IMPORTED_MODULE_1__["useDebugValue"])(reaction, printDebugValue);
+    useUnmount(function () {
+        dispose();
+    });
+    // render the original component, but have the
+    // reaction track the observables, so that rendering
+    // can be invalidated (see above) once a dependency changes
+    var rendering;
+    var exception;
+    reaction.current.track(function () {
+        try {
+            rendering = fn();
+        }
+        catch (e) {
+            exception = e;
+        }
+    });
+    if (exception) {
+        dispose();
+        throw exception; // re-throw any exceptions catched during rendering
+    }
+    return rendering;
+}
+
+// n.b. base case is not used for actual typings or exported in the typing files
+function observer(baseComponent, options) {
+    // The working of observer is explained step by step in this talk: https://www.youtube.com/watch?v=cPF4iBedoF0&feature=youtu.be&t=1307
+    if (isUsingStaticRendering()) {
+        return baseComponent;
+    }
+    var realOptions = __assign({ forwardRef: false }, options);
+    var baseComponentName = baseComponent.displayName || baseComponent.name;
+    var wrappedComponent = function (props, ref) {
+        return useObserver(function () { return baseComponent(props, ref); }, baseComponentName);
+    };
+    wrappedComponent.displayName = baseComponentName;
+    // memo; we are not intested in deep updates
+    // in props; we assume that if deep objects are changed,
+    // this is in observables, which would have been tracked anyway
+    var memoComponent;
+    if (realOptions.forwardRef) {
+        // we have to use forwardRef here because:
+        // 1. it cannot go before memo, only after it
+        // 2. forwardRef converts the function into an actual component, so we can't let the baseComponent do it
+        //    since it wouldn't be a callable function anymore
+        memoComponent = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(wrappedComponent));
+    }
+    else {
+        memoComponent = Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(wrappedComponent);
+    }
+    copyStaticProperties(baseComponent, memoComponent);
+    memoComponent.displayName = baseComponentName;
+    return memoComponent;
+}
+// based on https://github.com/mridgway/hoist-non-react-statics/blob/master/src/index.js
+var hoistBlackList = {
+    $$typeof: true,
+    render: true,
+    compare: true,
+    type: true
+};
+function copyStaticProperties(base, target) {
+    Object.keys(base).forEach(function (key) {
+        if (base.hasOwnProperty(key) && !hoistBlackList[key]) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(base, key));
+        }
+    });
+}
+
+function ObserverComponent(_a) {
+    var children = _a.children, render = _a.render;
+    var component = children || render;
+    if (typeof component !== "function") {
+        return null;
+    }
+    return useObserver(component);
+}
+ObserverComponent.propTypes = {
+    children: ObserverPropsCheck,
+    render: ObserverPropsCheck
+};
+ObserverComponent.displayName = "Observer";
+function ObserverPropsCheck(props, key, componentName, location, propFullName) {
+    var extraKey = key === "children" ? "render" : "children";
+    var hasProp = typeof props[key] === "function";
+    var hasExtraProp = typeof props[extraKey] === "function";
+    if (hasProp && hasExtraProp) {
+        return new Error("MobX Observer: Do not use children and render in the same time in`" + componentName);
+    }
+    if (hasProp || hasExtraProp) {
+        return null;
+    }
+    return new Error("Invalid prop `" +
+        propFullName +
+        "` of type `" +
+        typeof props[key] +
+        "` supplied to" +
+        " `" +
+        componentName +
+        "`, expected `function`.");
+}
+
+function useAsObservableSourceInternal(current, usedByLocalStore) {
+    if (usedByLocalStore && current === undefined) {
+        return undefined;
+    }
+    var _a = __read(react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(function () { return Object(mobx__WEBPACK_IMPORTED_MODULE_0__["observable"])(current, {}, { deep: false }); }), 1), res = _a[0];
+    Object(mobx__WEBPACK_IMPORTED_MODULE_0__["runInAction"])(function () {
+        Object.assign(res, current);
+    });
+    return res;
+}
+function useAsObservableSource(current) {
+    return useAsObservableSourceInternal(current, false);
+}
+
+function useLocalStore(initializer, current) {
+    var source = useAsObservableSourceInternal(current, true);
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(function () {
+        var local = Object(mobx__WEBPACK_IMPORTED_MODULE_0__["observable"])(initializer(source));
+        if (isPlainObject(local)) {
+            Object(mobx__WEBPACK_IMPORTED_MODULE_0__["runInAction"])(function () {
+                Object.keys(local).forEach(function (key) {
+                    var value = local[key];
+                    if (typeof value === "function") {
+                        // @ts-ignore No idea why ts2536 is popping out here
+                        local[key] = wrapInTransaction(value, local);
+                    }
+                });
+            });
+        }
+        return local;
+    })[0];
+}
+// tslint:disable-next-line: ban-types
+function wrapInTransaction(fn, context) {
+    return function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+        }
+        return Object(mobx__WEBPACK_IMPORTED_MODULE_0__["transaction"])(function () { return fn.apply(context, args); });
+    };
+}
+
+var optimizeScheduler = function (reactionScheduler) {
+    if (typeof reactionScheduler === "function") {
+        Object(mobx__WEBPACK_IMPORTED_MODULE_0__["configure"])({ reactionScheduler: reactionScheduler });
+    }
+};
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/mobx-react/dist/mobxreact.esm.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/mobx-react/dist/mobxreact.esm.js ***!
+  \*******************************************************/
+/*! exports provided: Observer, isUsingStaticRendering, useAsObservableSource, useLocalStore, useObserver, useStaticRendering, MobXProviderContext, PropTypes, Provider, disposeOnUnmount, inject, observer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MobXProviderContext", function() { return MobXProviderContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PropTypes", function() { return PropTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return Provider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "disposeOnUnmount", function() { return disposeOnUnmount; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "inject", function() { return inject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "observer", function() { return observer; });
+/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! mobx-react-lite */ "./node_modules/mobx-react-lite/dist/index.module.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Observer", function() { return mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["Observer"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isUsingStaticRendering", function() { return mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["isUsingStaticRendering"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "useAsObservableSource", function() { return mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["useAsObservableSource"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "useLocalStore", function() { return mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["useLocalStore"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "useObserver", function() { return mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["useObserver"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "useStaticRendering", function() { return mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["useStaticRendering"]; });
+
+
+
+
+
+
+
+var symbolId = 0;
+
+function createSymbol(name) {
+  if (typeof Symbol === "function") {
+    return Symbol(name);
+  }
+
+  var symbol = "__$mobx-react " + name + " (" + symbolId + ")";
+  symbolId++;
+  return symbol;
+}
+
+var createdSymbols = {};
+function newSymbol(name) {
+  if (!createdSymbols[name]) {
+    createdSymbols[name] = createSymbol(name);
+  }
+
+  return createdSymbols[name];
+}
+function shallowEqual(objA, objB) {
+  //From: https://github.com/facebook/fbjs/blob/c69904a511b900266935168223063dd8772dfc40/packages/fbjs/src/core/shallowEqual.js
+  if (is(objA, objB)) return true;
+
+  if (typeof objA !== "object" || objA === null || typeof objB !== "object" || objB === null) {
+    return false;
+  }
+
+  var keysA = Object.keys(objA);
+  var keysB = Object.keys(objB);
+  if (keysA.length !== keysB.length) return false;
+
+  for (var i = 0; i < keysA.length; i++) {
+    if (!Object.hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function is(x, y) {
+  // From: https://github.com/facebook/fbjs/blob/c69904a511b900266935168223063dd8772dfc40/packages/fbjs/src/core/shallowEqual.js
+  if (x === y) {
+    return x !== 0 || 1 / x === 1 / y;
+  } else {
+    return x !== x && y !== y;
+  }
+} // based on https://github.com/mridgway/hoist-non-react-statics/blob/master/src/index.js
+
+
+var hoistBlackList = {
+  $$typeof: 1,
+  render: 1,
+  compare: 1,
+  type: 1,
+  childContextTypes: 1,
+  contextType: 1,
+  contextTypes: 1,
+  defaultProps: 1,
+  getDefaultProps: 1,
+  getDerivedStateFromError: 1,
+  getDerivedStateFromProps: 1,
+  mixins: 1,
+  propTypes: 1
+};
+function copyStaticProperties(base, target) {
+  var protoProps = Object.getOwnPropertyNames(Object.getPrototypeOf(base));
+  Object.getOwnPropertyNames(base).forEach(function (key) {
+    if (!hoistBlackList[key] && protoProps.indexOf(key) === -1) {
+      Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(base, key));
+    }
+  });
+}
+/**
+ * Helper to set `prop` to `this` as non-enumerable (hidden prop)
+ * @param target
+ * @param prop
+ * @param value
+ */
+
+function setHiddenProp(target, prop, value) {
+  if (!Object.hasOwnProperty.call(target, prop)) {
+    Object.defineProperty(target, prop, {
+      enumerable: false,
+      configurable: true,
+      writable: true,
+      value: value
+    });
+  } else {
+    target[prop] = value;
+  }
+}
+/**
+ * Utilities for patching componentWillUnmount, to make sure @disposeOnUnmount works correctly icm with user defined hooks
+ * and the handler provided by mobx-react
+ */
+
+var mobxMixins =
+/*#__PURE__*/
+newSymbol("patchMixins");
+var mobxPatchedDefinition =
+/*#__PURE__*/
+newSymbol("patchedDefinition");
+
+function getMixins(target, methodName) {
+  var mixins = target[mobxMixins] = target[mobxMixins] || {};
+  var methodMixins = mixins[methodName] = mixins[methodName] || {};
+  methodMixins.locks = methodMixins.locks || 0;
+  methodMixins.methods = methodMixins.methods || [];
+  return methodMixins;
+}
+
+function wrapper(realMethod, mixins) {
+  var _this = this;
+
+  for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    args[_key - 2] = arguments[_key];
+  }
+
+  // locks are used to ensure that mixins are invoked only once per invocation, even on recursive calls
+  mixins.locks++;
+
+  try {
+    var retVal;
+
+    if (realMethod !== undefined && realMethod !== null) {
+      retVal = realMethod.apply(this, args);
+    }
+
+    return retVal;
+  } finally {
+    mixins.locks--;
+
+    if (mixins.locks === 0) {
+      mixins.methods.forEach(function (mx) {
+        mx.apply(_this, args);
+      });
+    }
+  }
+}
+
+function wrapFunction(realMethod, mixins) {
+  var fn = function fn() {
+    for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      args[_key2] = arguments[_key2];
+    }
+
+    wrapper.call.apply(wrapper, [this, realMethod, mixins].concat(args));
+  };
+
+  return fn;
+}
+
+function patch(target, methodName, mixinMethod) {
+  var mixins = getMixins(target, methodName);
+
+  if (mixins.methods.indexOf(mixinMethod) < 0) {
+    mixins.methods.push(mixinMethod);
+  }
+
+  var oldDefinition = Object.getOwnPropertyDescriptor(target, methodName);
+
+  if (oldDefinition && oldDefinition[mobxPatchedDefinition]) {
+    // already patched definition, do not repatch
+    return;
+  }
+
+  var originalMethod = target[methodName];
+  var newDefinition = createDefinition(target, methodName, oldDefinition ? oldDefinition.enumerable : undefined, mixins, originalMethod);
+  Object.defineProperty(target, methodName, newDefinition);
+}
+
+function createDefinition(target, methodName, enumerable, mixins, originalMethod) {
+  var _ref;
+
+  var wrappedFunc = wrapFunction(originalMethod, mixins);
+  return _ref = {}, _ref[mobxPatchedDefinition] = true, _ref.get = function get() {
+    return wrappedFunc;
+  }, _ref.set = function set(value) {
+    if (this === target) {
+      wrappedFunc = wrapFunction(value, mixins);
+    } else {
+      // when it is an instance of the prototype/a child prototype patch that particular case again separately
+      // since we need to store separate values depending on wether it is the actual instance, the prototype, etc
+      // e.g. the method for super might not be the same as the method for the prototype which might be not the same
+      // as the method for the instance
+      var newDefinition = createDefinition(this, methodName, enumerable, mixins, value);
+      Object.defineProperty(this, methodName, newDefinition);
+    }
+  }, _ref.configurable = true, _ref.enumerable = enumerable, _ref;
+}
+
+var mobxAdminProperty = mobx__WEBPACK_IMPORTED_MODULE_0__["$mobx"] || "$mobx";
+var mobxIsUnmounted =
+/*#__PURE__*/
+newSymbol("isUnmounted");
+var skipRenderKey =
+/*#__PURE__*/
+newSymbol("skipRender");
+var isForcingUpdateKey =
+/*#__PURE__*/
+newSymbol("isForcingUpdate");
+function makeClassComponentObserver(componentClass) {
+  var target = componentClass.prototype;
+  if (target.componentWillReact) throw new Error("The componentWillReact life-cycle event is no longer supported");
+
+  if (componentClass["__proto__"] !== react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]) {
+    if (!target.shouldComponentUpdate) target.shouldComponentUpdate = observerSCU;else if (target.shouldComponentUpdate !== observerSCU) // n.b. unequal check, instead of existence check, as @observer might be on superclass as well
+      throw new Error("It is not allowed to use shouldComponentUpdate in observer based components.");
+  } // this.props and this.state are made observable, just to make sure @computed fields that
+  // are defined inside the component, and which rely on state or props, re-compute if state or props change
+  // (otherwise the computed wouldn't update and become stale on props change, since props are not observable)
+  // However, this solution is not without it's own problems: https://github.com/mobxjs/mobx-react/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aobservable-props-or-not+
+
+
+  makeObservableProp(target, "props");
+  makeObservableProp(target, "state");
+  var baseRender = target.render;
+
+  target.render = function () {
+    return makeComponentReactive.call(this, baseRender);
+  };
+
+  patch(target, "componentWillUnmount", function () {
+    if (Object(mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["isUsingStaticRendering"])() === true) return;
+
+    if (this.render[mobxAdminProperty]) {
+      this.render[mobxAdminProperty].dispose();
+    } else if (true) {
+      var displayName = getDisplayName(this);
+      console.warn("The render function for an observer component (" + displayName + ") was modified after MobX attached. This is not supported, since the new function can't be triggered by MobX.");
+    }
+
+    this[mobxIsUnmounted] = true;
+  });
+  return componentClass;
+} // Generates a friendly name for debugging
+
+function getDisplayName(comp) {
+  return comp.displayName || comp.name || comp.constructor && (comp.constructor.displayName || comp.constructor.name) || "<component>";
+}
+
+function makeComponentReactive(render) {
+  var _this = this;
+
+  if (Object(mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["isUsingStaticRendering"])() === true) return render.call(this);
+  /**
+   * If props are shallowly modified, react will render anyway,
+   * so atom.reportChanged() should not result in yet another re-render
+   */
+
+  setHiddenProp(this, skipRenderKey, false);
+  /**
+   * forceUpdate will re-assign this.props. We don't want that to cause a loop,
+   * so detect these changes
+   */
+
+  setHiddenProp(this, isForcingUpdateKey, false);
+  var initialName = getDisplayName(this);
+  var baseRender = render.bind(this);
+  var isRenderingPending = false;
+  var reaction = new mobx__WEBPACK_IMPORTED_MODULE_0__["Reaction"](initialName + ".render()", function () {
+    if (!isRenderingPending) {
+      // N.B. Getting here *before mounting* means that a component constructor has side effects (see the relevant test in misc.js)
+      // This unidiomatic React usage but React will correctly warn about this so we continue as usual
+      // See #85 / Pull #44
+      isRenderingPending = true;
+
+      if (_this[mobxIsUnmounted] !== true) {
+        var hasError = true;
+
+        try {
+          setHiddenProp(_this, isForcingUpdateKey, true);
+          if (!_this[skipRenderKey]) react__WEBPACK_IMPORTED_MODULE_1__["Component"].prototype.forceUpdate.call(_this);
+          hasError = false;
+        } finally {
+          setHiddenProp(_this, isForcingUpdateKey, false);
+          if (hasError) reaction.dispose();
+        }
+      }
+    }
+  });
+  reaction["reactComponent"] = this;
+  reactiveRender[mobxAdminProperty] = reaction;
+  this.render = reactiveRender;
+
+  function reactiveRender() {
+    isRenderingPending = false;
+    var exception = undefined;
+    var rendering = undefined;
+    reaction.track(function () {
+      try {
+        rendering = Object(mobx__WEBPACK_IMPORTED_MODULE_0__["_allowStateChanges"])(false, baseRender);
+      } catch (e) {
+        exception = e;
+      }
+    });
+
+    if (exception) {
+      throw exception;
+    }
+
+    return rendering;
+  }
+
+  return reactiveRender.call(this);
+}
+
+function observerSCU(nextProps, nextState) {
+  if (Object(mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["isUsingStaticRendering"])()) {
+    console.warn("[mobx-react] It seems that a re-rendering of a React component is triggered while in static (server-side) mode. Please make sure components are rendered only once server-side.");
+  } // update on any state changes (as is the default)
+
+
+  if (this.state !== nextState) {
+    return true;
+  } // update if props are shallowly not equal, inspired by PureRenderMixin
+  // we could return just 'false' here, and avoid the `skipRender` checks etc
+  // however, it is nicer if lifecycle events are triggered like usually,
+  // so we return true here if props are shallowly modified.
+
+
+  return !shallowEqual(this.props, nextProps);
+}
+
+function makeObservableProp(target, propName) {
+  var valueHolderKey = newSymbol("reactProp_" + propName + "_valueHolder");
+  var atomHolderKey = newSymbol("reactProp_" + propName + "_atomHolder");
+
+  function getAtom() {
+    if (!this[atomHolderKey]) {
+      setHiddenProp(this, atomHolderKey, Object(mobx__WEBPACK_IMPORTED_MODULE_0__["createAtom"])("reactive " + propName));
+    }
+
+    return this[atomHolderKey];
+  }
+
+  Object.defineProperty(target, propName, {
+    configurable: true,
+    enumerable: true,
+    get: function get() {
+      var prevReadState = false;
+
+      if (mobx__WEBPACK_IMPORTED_MODULE_0__["_allowStateReadsStart"] && mobx__WEBPACK_IMPORTED_MODULE_0__["_allowStateReadsEnd"]) {
+        prevReadState = Object(mobx__WEBPACK_IMPORTED_MODULE_0__["_allowStateReadsStart"])(true);
+      }
+
+      getAtom.call(this).reportObserved();
+
+      if (mobx__WEBPACK_IMPORTED_MODULE_0__["_allowStateReadsStart"] && mobx__WEBPACK_IMPORTED_MODULE_0__["_allowStateReadsEnd"]) {
+        Object(mobx__WEBPACK_IMPORTED_MODULE_0__["_allowStateReadsEnd"])(prevReadState);
+      }
+
+      return this[valueHolderKey];
+    },
+    set: function set(v) {
+      if (!this[isForcingUpdateKey] && !shallowEqual(this[valueHolderKey], v)) {
+        setHiddenProp(this, valueHolderKey, v);
+        setHiddenProp(this, skipRenderKey, true);
+        getAtom.call(this).reportChanged();
+        setHiddenProp(this, skipRenderKey, false);
+      } else {
+        setHiddenProp(this, valueHolderKey, v);
+      }
+    }
+  });
+}
+
+var hasSymbol = typeof Symbol === "function" && Symbol.for; // Using react-is had some issues (and operates on elements, not on types), see #608 / #609
+
+var ReactForwardRefSymbol = hasSymbol ?
+/*#__PURE__*/
+Symbol.for("react.forward_ref") : typeof react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"] === "function" &&
+/*#__PURE__*/
+Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function (props) {
+  return null;
+})["$$typeof"];
+var ReactMemoSymbol = hasSymbol ?
+/*#__PURE__*/
+Symbol.for("react.memo") : typeof react__WEBPACK_IMPORTED_MODULE_1__["memo"] === "function" &&
+/*#__PURE__*/
+Object(react__WEBPACK_IMPORTED_MODULE_1__["memo"])(function (props) {
+  return null;
+})["$$typeof"];
+/**
+ * Observer function / decorator
+ */
+
+function observer(component) {
+  if (component["isMobxInjector"] === true) {
+    console.warn("Mobx observer: You are trying to use 'observer' on a component that already has 'inject'. Please apply 'observer' before applying 'inject'");
+  }
+
+  if (ReactMemoSymbol && component["$$typeof"] === ReactMemoSymbol) {
+    throw new Error("Mobx observer: You are trying to use 'observer' on function component wrapped to either another observer or 'React.memo'. The observer already applies 'React.memo' for you.");
+  } // Unwrap forward refs into `<Observer>` component
+  // we need to unwrap the render, because it is the inner render that needs to be tracked,
+  // not the ForwardRef HoC
+
+
+  if (ReactForwardRefSymbol && component["$$typeof"] === ReactForwardRefSymbol) {
+    var baseRender = component["render"];
+    if (typeof baseRender !== "function") throw new Error("render property of ForwardRef was not a function");
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function ObserverForwardRef() {
+      var args = arguments;
+      return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["Observer"], null, function () {
+        return baseRender.apply(undefined, args);
+      });
+    });
+  } // Function component
+
+
+  if (typeof component === "function" && (!component.prototype || !component.prototype.render) && !component["isReactClass"] && !Object.prototype.isPrototypeOf.call(react__WEBPACK_IMPORTED_MODULE_1__["Component"], component)) {
+    return Object(mobx_react_lite__WEBPACK_IMPORTED_MODULE_3__["observer"])(component);
+  }
+
+  return makeClassComponentObserver(component);
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+var MobXProviderContext =
+/*#__PURE__*/
+react__WEBPACK_IMPORTED_MODULE_1___default.a.createContext({});
+function Provider(props) {
+  var children = props.children,
+      stores = _objectWithoutPropertiesLoose(props, ["children"]);
+
+  var parentValue = react__WEBPACK_IMPORTED_MODULE_1___default.a.useContext(MobXProviderContext);
+  var mutableProviderRef = react__WEBPACK_IMPORTED_MODULE_1___default.a.useRef(_extends({}, parentValue, {}, stores));
+  var value = mutableProviderRef.current;
+
+  if (true) {
+    var newValue = _extends({}, value, {}, stores); // spread in previous state for the context based stores
+
+
+    if (!shallowEqual(value, newValue)) {
+      throw new Error("MobX Provider: The set of provided stores has changed. See: https://github.com/mobxjs/mobx-react#the-set-of-provided-stores-has-changed-error.");
+    }
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MobXProviderContext.Provider, {
+    value: value
+  }, children);
+}
+Provider.displayName = "MobXProvider";
+
+/**
+ * Store Injection
+ */
+
+function createStoreInjector(grabStoresFn, component, injectNames, makeReactive) {
+  // Support forward refs
+  var Injector = react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(function (props, ref) {
+    var newProps = _extends({}, props);
+
+    var context = react__WEBPACK_IMPORTED_MODULE_1___default.a.useContext(MobXProviderContext);
+    Object.assign(newProps, grabStoresFn(context || {}, newProps) || {});
+
+    if (ref) {
+      newProps.ref = ref;
+    }
+
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(component, newProps);
+  });
+  if (makeReactive) Injector = observer(Injector);
+  Injector["isMobxInjector"] = true; // assigned late to suppress observer warning
+  // Static fields from component should be visible on the generated Injector
+
+  copyStaticProperties(component, Injector);
+  Injector["wrappedComponent"] = component;
+  Injector.displayName = getInjectName(component, injectNames);
+  return Injector;
+}
+
+function getInjectName(component, injectNames) {
+  var displayName;
+  var componentName = component.displayName || component.name || component.constructor && component.constructor.name || "Component";
+  if (injectNames) displayName = "inject-with-" + injectNames + "(" + componentName + ")";else displayName = "inject(" + componentName + ")";
+  return displayName;
+}
+
+function grabStoresByName(storeNames) {
+  return function (baseStores, nextProps) {
+    storeNames.forEach(function (storeName) {
+      if (storeName in nextProps // prefer props over stores
+      ) return;
+      if (!(storeName in baseStores)) throw new Error("MobX injector: Store '" + storeName + "' is not available! Make sure it is provided by some Provider");
+      nextProps[storeName] = baseStores[storeName];
+    });
+    return nextProps;
+  };
+}
+/**
+ * higher order component that injects stores to a child.
+ * takes either a varargs list of strings, which are stores read from the context,
+ * or a function that manually maps the available stores from the context to props:
+ * storesToProps(mobxStores, props, context) => newProps
+ */
+
+
+function inject() {
+  for (var _len = arguments.length, storeNames = new Array(_len), _key = 0; _key < _len; _key++) {
+    storeNames[_key] = arguments[_key];
+  }
+
+  if (typeof arguments[0] === "function") {
+    var grabStoresFn = arguments[0];
+    return function (componentClass) {
+      return createStoreInjector(grabStoresFn, componentClass, grabStoresFn.name, true);
+    };
+  } else {
+    return function (componentClass) {
+      return createStoreInjector(grabStoresByName(storeNames), componentClass, storeNames.join("-"), false);
+    };
+  }
+}
+
+var protoStoreKey =
+/*#__PURE__*/
+newSymbol("disposeOnUnmountProto");
+var instStoreKey =
+/*#__PURE__*/
+newSymbol("disposeOnUnmountInst");
+
+function runDisposersOnWillUnmount() {
+  var _this = this;
+  [].concat(this[protoStoreKey] || [], this[instStoreKey] || []).forEach(function (propKeyOrFunction) {
+    var prop = typeof propKeyOrFunction === "string" ? _this[propKeyOrFunction] : propKeyOrFunction;
+
+    if (prop !== undefined && prop !== null) {
+      if (Array.isArray(prop)) prop.map(function (f) {
+        return f();
+      });else prop();
+    }
+  });
+}
+
+function disposeOnUnmount(target, propertyKeyOrFunction) {
+  if (Array.isArray(propertyKeyOrFunction)) {
+    return propertyKeyOrFunction.map(function (fn) {
+      return disposeOnUnmount(target, fn);
+    });
+  }
+
+  var c = Object.getPrototypeOf(target).constructor || Object.getPrototypeOf(target.constructor);
+  var c2 = Object.getPrototypeOf(target.constructor);
+
+  if (!(c === react__WEBPACK_IMPORTED_MODULE_1___default.a.Component || c === react__WEBPACK_IMPORTED_MODULE_1___default.a.PureComponent || c2 === react__WEBPACK_IMPORTED_MODULE_1___default.a.Component || c2 === react__WEBPACK_IMPORTED_MODULE_1___default.a.PureComponent)) {
+    throw new Error("[mobx-react] disposeOnUnmount only supports direct subclasses of React.Component or React.PureComponent.");
+  }
+
+  if (typeof propertyKeyOrFunction !== "string" && typeof propertyKeyOrFunction !== "function" && !Array.isArray(propertyKeyOrFunction)) {
+    throw new Error("[mobx-react] disposeOnUnmount only works if the parameter is either a property key or a function.");
+  } // decorator's target is the prototype, so it doesn't have any instance properties like props
+
+
+  var isDecorator = typeof propertyKeyOrFunction === "string"; // add property key / function we want run (disposed) to the store
+
+  var componentWasAlreadyModified = !!target[protoStoreKey] || !!target[instStoreKey];
+  var store = isDecorator ? // decorators are added to the prototype store
+  target[protoStoreKey] || (target[protoStoreKey] = []) : // functions are added to the instance store
+  target[instStoreKey] || (target[instStoreKey] = []);
+  store.push(propertyKeyOrFunction); // tweak the component class componentWillUnmount if not done already
+
+  if (!componentWasAlreadyModified) {
+    patch(target, "componentWillUnmount", runDisposersOnWillUnmount);
+  } // return the disposer as is if invoked as a non decorator
+
+
+  if (typeof propertyKeyOrFunction !== "string") {
+    return propertyKeyOrFunction;
+  }
+}
+
+function createChainableTypeChecker(validator) {
+  function checkType(isRequired, props, propName, componentName, location, propFullName) {
+    for (var _len = arguments.length, rest = new Array(_len > 6 ? _len - 6 : 0), _key = 6; _key < _len; _key++) {
+      rest[_key - 6] = arguments[_key];
+    }
+
+    return Object(mobx__WEBPACK_IMPORTED_MODULE_0__["untracked"])(function () {
+      componentName = componentName || "<<anonymous>>";
+      propFullName = propFullName || propName;
+
+      if (props[propName] == null) {
+        if (isRequired) {
+          var actual = props[propName] === null ? "null" : "undefined";
+          return new Error("The " + location + " `" + propFullName + "` is marked as required " + "in `" + componentName + "`, but its value is `" + actual + "`.");
+        }
+
+        return null;
+      } else {
+        // @ts-ignore rest arg is necessary for some React internals - fails tests otherwise
+        return validator.apply(void 0, [props, propName, componentName, location, propFullName].concat(rest));
+      }
+    });
+  }
+
+  var chainedCheckType = checkType.bind(null, false); // Add isRequired to satisfy Requirable
+
+  chainedCheckType.isRequired = checkType.bind(null, true);
+  return chainedCheckType;
+} // Copied from React.PropTypes
+
+
+function isSymbol(propType, propValue) {
+  // Native Symbol.
+  if (propType === "symbol") {
+    return true;
+  } // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+
+
+  if (propValue["@@toStringTag"] === "Symbol") {
+    return true;
+  } // Fallback for non-spec compliant Symbols which are polyfilled.
+
+
+  if (typeof Symbol === "function" && propValue instanceof Symbol) {
+    return true;
+  }
+
+  return false;
+} // Copied from React.PropTypes
+
+
+function getPropType(propValue) {
+  var propType = typeof propValue;
+
+  if (Array.isArray(propValue)) {
+    return "array";
+  }
+
+  if (propValue instanceof RegExp) {
+    // Old webkits (at least until Android 4.0) return 'function' rather than
+    // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+    // passes PropTypes.object.
+    return "object";
+  }
+
+  if (isSymbol(propType, propValue)) {
+    return "symbol";
+  }
+
+  return propType;
+} // This handles more types than `getPropType`. Only used for error messages.
+// Copied from React.PropTypes
+
+
+function getPreciseType(propValue) {
+  var propType = getPropType(propValue);
+
+  if (propType === "object") {
+    if (propValue instanceof Date) {
+      return "date";
+    } else if (propValue instanceof RegExp) {
+      return "regexp";
+    }
+  }
+
+  return propType;
+}
+
+function createObservableTypeCheckerCreator(allowNativeType, mobxType) {
+  return createChainableTypeChecker(function (props, propName, componentName, location, propFullName) {
+    return Object(mobx__WEBPACK_IMPORTED_MODULE_0__["untracked"])(function () {
+      if (allowNativeType) {
+        if (getPropType(props[propName]) === mobxType.toLowerCase()) return null;
+      }
+
+      var mobxChecker;
+
+      switch (mobxType) {
+        case "Array":
+          mobxChecker = mobx__WEBPACK_IMPORTED_MODULE_0__["isObservableArray"];
+          break;
+
+        case "Object":
+          mobxChecker = mobx__WEBPACK_IMPORTED_MODULE_0__["isObservableObject"];
+          break;
+
+        case "Map":
+          mobxChecker = mobx__WEBPACK_IMPORTED_MODULE_0__["isObservableMap"];
+          break;
+
+        default:
+          throw new Error("Unexpected mobxType: " + mobxType);
+      }
+
+      var propValue = props[propName];
+
+      if (!mobxChecker(propValue)) {
+        var preciseType = getPreciseType(propValue);
+        var nativeTypeExpectationMessage = allowNativeType ? " or javascript `" + mobxType.toLowerCase() + "`" : "";
+        return new Error("Invalid prop `" + propFullName + "` of type `" + preciseType + "` supplied to" + " `" + componentName + "`, expected `mobx.Observable" + mobxType + "`" + nativeTypeExpectationMessage + ".");
+      }
+
+      return null;
+    });
+  });
+}
+
+function createObservableArrayOfTypeChecker(allowNativeType, typeChecker) {
+  return createChainableTypeChecker(function (props, propName, componentName, location, propFullName) {
+    for (var _len2 = arguments.length, rest = new Array(_len2 > 5 ? _len2 - 5 : 0), _key2 = 5; _key2 < _len2; _key2++) {
+      rest[_key2 - 5] = arguments[_key2];
+    }
+
+    return Object(mobx__WEBPACK_IMPORTED_MODULE_0__["untracked"])(function () {
+      if (typeof typeChecker !== "function") {
+        return new Error("Property `" + propFullName + "` of component `" + componentName + "` has " + "invalid PropType notation.");
+      } else {
+        var error = createObservableTypeCheckerCreator(allowNativeType, "Array")(props, propName, componentName, location, propFullName);
+        if (error instanceof Error) return error;
+        var propValue = props[propName];
+
+        for (var i = 0; i < propValue.length; i++) {
+          error = typeChecker.apply(void 0, [propValue, i, componentName, location, propFullName + "[" + i + "]"].concat(rest));
+          if (error instanceof Error) return error;
+        }
+
+        return null;
+      }
+    });
+  });
+}
+
+var observableArray =
+/*#__PURE__*/
+createObservableTypeCheckerCreator(false, "Array");
+var observableArrayOf =
+/*#__PURE__*/
+createObservableArrayOfTypeChecker.bind(null, false);
+var observableMap =
+/*#__PURE__*/
+createObservableTypeCheckerCreator(false, "Map");
+var observableObject =
+/*#__PURE__*/
+createObservableTypeCheckerCreator(false, "Object");
+var arrayOrObservableArray =
+/*#__PURE__*/
+createObservableTypeCheckerCreator(true, "Array");
+var arrayOrObservableArrayOf =
+/*#__PURE__*/
+createObservableArrayOfTypeChecker.bind(null, true);
+var objectOrObservableObject =
+/*#__PURE__*/
+createObservableTypeCheckerCreator(true, "Object");
+var PropTypes = {
+  observableArray: observableArray,
+  observableArrayOf: observableArrayOf,
+  observableMap: observableMap,
+  observableObject: observableObject,
+  arrayOrObservableArray: arrayOrObservableArray,
+  arrayOrObservableArrayOf: arrayOrObservableArrayOf,
+  objectOrObservableObject: objectOrObservableObject
+};
+
+if (!react__WEBPACK_IMPORTED_MODULE_1__["Component"]) throw new Error("mobx-react requires React to be available");
+if (!mobx__WEBPACK_IMPORTED_MODULE_0__["observable"]) throw new Error("mobx-react requires mobx to be available");
+if (typeof react_dom__WEBPACK_IMPORTED_MODULE_2__["unstable_batchedUpdates"] === "function") Object(mobx__WEBPACK_IMPORTED_MODULE_0__["configure"])({
+  reactionScheduler: react_dom__WEBPACK_IMPORTED_MODULE_2__["unstable_batchedUpdates"]
+});
+
+
+//# sourceMappingURL=mobxreact.esm.js.map
+
 
 /***/ }),
 
@@ -6914,6 +8199,17 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/react-dom/index.js":
+/*!***********************************************************************************************!*\
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_ef0ff7c60362f24a921f ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f */ "dll-reference dll_ef0ff7c60362f24a921f"))("./node_modules/react-dom/index.js");
+
+/***/ }),
+
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
   !*** delegated ./node_modules/react/index.js from dll-reference dll_ef0ff7c60362f24a921f ***!
@@ -8555,12 +9851,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Card */ "./components/Card.js");
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/dist/mobxreact.esm.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../store */ "./store.js");
 
 
 
 var _jsxFileName = "/home/commodore64/ombd-next/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
+
+
 
 
 
@@ -8632,11 +9932,20 @@ function Index() {
     });
   };
 
+  Object(react__WEBPACK_IMPORTED_MODULE_6__["useEffect"])(function () {
+    _store__WEBPACK_IMPORTED_MODULE_9__["default"].setTemp(2);
+    console.log(_store__WEBPACK_IMPORTED_MODULE_9__["default"].temp);
+
+    if (favorite !== null) {
+      setFavorite(JSON.parse(mobx_localstorage__WEBPACK_IMPORTED_MODULE_5___default.a.getItem('favorites')));
+      _store__WEBPACK_IMPORTED_MODULE_9__["default"].set_movies(JSON.parse(mobx_localstorage__WEBPACK_IMPORTED_MODULE_5___default.a.getItem('favorites')));
+    }
+  }, []);
   return __jsx("div", {
     className: "jsx-4114159983" + " " + "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 60
     },
     __self: this
   }, __jsx("form", {
@@ -8645,21 +9954,21 @@ function Index() {
     className: "jsx-4114159983" + " " + "form-inline",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 61
     },
     __self: this
   }, __jsx("div", {
     className: "jsx-4114159983" + " " + "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 62
     },
     __self: this
   }, __jsx("div", {
     className: "jsx-4114159983" + " " + "column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 63
     },
     __self: this
   }, __jsx("input", {
@@ -8671,14 +9980,14 @@ function Index() {
     className: "jsx-4114159983" + " " + "form-control",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 64
     },
     __self: this
   })), __jsx("div", {
     className: "jsx-4114159983" + " " + "column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 66
     },
     __self: this
   }, __jsx("input", {
@@ -8687,14 +9996,14 @@ function Index() {
     className: "jsx-4114159983" + " " + "form-control",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 67
     },
     __self: this
   })), __jsx("div", {
     className: "jsx-4114159983" + " " + "column",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 69
     },
     __self: this
   }, __jsx("select", {
@@ -8702,7 +10011,7 @@ function Index() {
     className: "jsx-4114159983" + " " + "form-control",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 70
     },
     __self: this
   }, __jsx("option", {
@@ -8710,14 +10019,14 @@ function Index() {
     className: "jsx-4114159983",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 71
     },
     __self: this
   }, "Choose..."), __jsx("option", {
     className: "jsx-4114159983",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 72
     },
     __self: this
   }, "..."))), __jsx("button", {
@@ -8725,28 +10034,28 @@ function Index() {
     className: "jsx-4114159983" + " " + "btn btn-info",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 75
     },
     __self: this
   }, "Search"))), __jsx("hr", {
     className: "jsx-4114159983",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 78
     },
     __self: this
   }), __jsx("center", {
     className: "jsx-4114159983",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 80
     },
     __self: this
   }, __jsx("div", {
     className: "jsx-4114159983" + " " + "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 81
     },
     __self: this
   }, result.map(function (movie, index) {
@@ -8758,22 +10067,85 @@ function Index() {
       delFavorite: delFavorite,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 83
       },
       __self: this
     });
   }))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_3___default.a, {
     id: "4114159983",
     __self: this
-  }, ".form-control.jsx-4114159983{margin-right:12px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2NvbW1vZG9yZTY0L29tYmQtbmV4dC9wYWdlcy9pbmRleC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2RW9CLEFBRzhCLGtCQUVuQiIsImZpbGUiOiIvaG9tZS9jb21tb2RvcmU2NC9vbWJkLW5leHQvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZmV0Y2ggZnJvbSAnaXNvbW9ycGhpYy11bmZldGNoJztcbmltcG9ydCBsb2NhbFN0b3JhZ2UgZnJvbSAnbW9ieC1sb2NhbHN0b3JhZ2UnO1xuaW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgQ2FyZCBmcm9tICcuLi9jb21wb25lbnRzL0NhcmQnO1xuXG5mdW5jdGlvbiBJbmRleCgpIHtcblxuICBjb25zdCBbdmFsdWUsIHNldFZhbHVlXSA9IHVzZVN0YXRlKCk7XG4gIGNvbnN0IFtyZXN1bHQsIHNldFJlc3VsdF0gPSB1c2VTdGF0ZShbXSk7XG4gIGNvbnN0IFtmYXZvcml0ZSwgc2V0RmF2b3JpdGVdID0gdXNlU3RhdGUoW10pO1xuXG4gIFxuXG4gIGNvbnN0IGFkZEZhdm9yaXRlID0gb2JqZWN0ID0+IHtcbiAgICAgIGNvbnN0IG5ld0ZhdiA9IFsuLi5mYXZvcml0ZSwgb2JqZWN0XTtcbiAgICAgIHNldEZhdm9yaXRlKG5ld0Zhdik7XG4gICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgnZmF2b3JpdGVzJywgSlNPTi5zdHJpbmdpZnkobmV3RmF2KSk7XG4gICAgICBjb25zb2xlLmxvZyhKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdmYXZvcml0ZXMnKSkpO1xuICB9O1xuXG4gIGNvbnN0IGRlbEZhdm9yaXRlID0gaW5kZXggPT4ge1xuICAgICAgY29uc3QgbmV3RmF2ID0gWy4uLmZhdm9yaXRlXTtcbiAgICAgIG5ld0Zhdi5zcGxpY2UoaW5kZXgsIDEpO1xuICAgICAgc2V0RmF2b3JpdGUobmV3RmF2KTtcbiAgICAgIFxuICAgICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oJ2Zhdm9yaXRlcycsIEpTT04uc3RyaW5naWZ5KG5ld0ZhdikpO1xuICAgICAgY29uc29sZS5sb2coSlNPTi5wYXJzZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnZmF2b3JpdGVzJykpKTtcbiAgICAgIFxuICB9O1xuXG4gIGNvbnN0IGhhbmRsZVN1Ym1pdCA9IGFzeW5jIGUgPT4ge1xuICAgIGUucHJldmVudERlZmF1bHQoKTtcbiAgICBpZighdmFsdWUpIHJldHVybjtcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgaHR0cDovL3d3dy5vbWRiYXBpLmNvbS8/cz0ke3ZhbHVlfSZhcGlrZXk9OGFlOGIxODlgKTtcbiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcbiAgICBcbiAgICBcbiAgICBkYXRhLlJlc3BvbnNlID09PSBcIlRydWVcIiA/IHNldFJlc3VsdChkYXRhLlNlYXJjaCkgOiBhbGVydChcIk1vdmllIG5vdCBmb3VuZCFcIik7XG5cbiAgICBjb25zb2xlLmxvZyhkYXRhKTtcbiAgICBcbiAgfVxuXG4gIHJldHVybiAoXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICA8Zm9ybSBjbGFzc05hbWU9XCJmb3JtLWlubGluZVwiIGlkPVwiZm9ybVwiIG9uU3VibWl0PXtoYW5kbGVTdWJtaXR9PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm93XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtblwiPlxuICAgICAgICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBjbGFzc05hbWU9XCJmb3JtLWNvbnRyb2xcIiBwbGFjZWhvbGRlcj1cIlRpdGxlXCIgb25DaGFuZ2U9e2UgPT4gc2V0VmFsdWUoZS50YXJnZXQudmFsdWUpfS8+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1uXCI+XG4gICAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIGNsYXNzTmFtZT1cImZvcm0tY29udHJvbFwiIHBsYWNlaG9sZGVyPVwiWWVhclwiIC8+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1uXCI+XG4gICAgICAgICAgICAgIDxzZWxlY3QgaWQ9XCJpbnB1dFN0YXRlXCIgY2xhc3NOYW1lPVwiZm9ybS1jb250cm9sXCI+XG4gICAgICAgICAgICAgICAgPG9wdGlvbiBkZWZhdWx0VmFsdWU+Q2hvb3NlLi4uPC9vcHRpb24+XG4gICAgICAgICAgICAgICAgPG9wdGlvbj4uLi48L29wdGlvbj5cbiAgICAgICAgICAgICAgPC9zZWxlY3Q+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxidXR0b24gdHlwZT1cInN1Ym1pdFwiIGNsYXNzTmFtZT1cImJ0biBidG4taW5mb1wiPlNlYXJjaDwvYnV0dG9uPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Zvcm0+XG4gICAgICAgIDxoci8+XG5cbiAgICAgICAgPGNlbnRlcj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvd1wiPlxuICAgICAgICAgICAge3Jlc3VsdC5tYXAoKG1vdmllLCBpbmRleCkgPT4gKFxuICAgICAgICAgICAgPENhcmQga2V5PXtpbmRleH0gXG4gICAgICAgICAgICAgIGluZGV4PXtpbmRleH0gXG4gICAgICAgICAgICAgIG1vdmllPXttb3ZpZX1cbiAgICAgICAgICAgICAgYWRkRmF2b3JpdGU9e2FkZEZhdm9yaXRlfVxuICAgICAgICAgICAgICBkZWxGYXZvcml0ZT17ZGVsRmF2b3JpdGV9XG4gICAgICAgICAgICAgIC8+IFxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvY2VudGVyPlxuXG4gICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAuZm9ybS1jb250cm9sIHtcbiAgICAgICAgICAgIG1hcmdpbi1yaWdodDoxMnB4O1xuICAgICAgICAgICAgXG4gICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICAgICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBJbmRleDsiXX0= */\n/*@ sourceURL=/home/commodore64/ombd-next/pages/index.js */"));
+  }, ".form-control.jsx-4114159983{margin-right:12px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2NvbW1vZG9yZTY0L29tYmQtbmV4dC9wYWdlcy9pbmRleC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE0Rm9CLEFBRzhCLGtCQUVuQiIsImZpbGUiOiIvaG9tZS9jb21tb2RvcmU2NC9vbWJkLW5leHQvcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZmV0Y2ggZnJvbSAnaXNvbW9ycGhpYy11bmZldGNoJztcbmltcG9ydCBsb2NhbFN0b3JhZ2UgZnJvbSAnbW9ieC1sb2NhbHN0b3JhZ2UnO1xuaW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgQ2FyZCBmcm9tICcuLi9jb21wb25lbnRzL0NhcmQnO1xuaW1wb3J0IHtvYnNlcnZlcn0gZnJvbSAnbW9ieC1yZWFjdCc7XG5pbXBvcnQgc3RvcmUgZnJvbSAnLi4vc3RvcmUnO1xuXG5cbmZ1bmN0aW9uIEluZGV4KCkge1xuXG4gIGNvbnN0IFt2YWx1ZSwgc2V0VmFsdWVdID0gdXNlU3RhdGUoKTtcbiAgY29uc3QgW3Jlc3VsdCwgc2V0UmVzdWx0XSA9IHVzZVN0YXRlKFtdKTtcbiAgY29uc3QgW2Zhdm9yaXRlLCBzZXRGYXZvcml0ZV0gPSB1c2VTdGF0ZShbXSk7XG5cbiAgXG5cbiAgY29uc3QgYWRkRmF2b3JpdGUgPSBvYmplY3QgPT4ge1xuICAgICAgY29uc3QgbmV3RmF2ID0gWy4uLmZhdm9yaXRlLCBvYmplY3RdO1xuICAgICAgc2V0RmF2b3JpdGUobmV3RmF2KTtcbiAgICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKCdmYXZvcml0ZXMnLCBKU09OLnN0cmluZ2lmeShuZXdGYXYpKTtcbiAgICAgIGNvbnNvbGUubG9nKEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2Zhdm9yaXRlcycpKSk7XG4gIH07XG5cbiAgY29uc3QgZGVsRmF2b3JpdGUgPSBpbmRleCA9PiB7XG4gICAgICBjb25zdCBuZXdGYXYgPSBbLi4uZmF2b3JpdGVdO1xuICAgICAgbmV3RmF2LnNwbGljZShpbmRleCwgMSk7XG4gICAgICBzZXRGYXZvcml0ZShuZXdGYXYpO1xuICAgICAgXG4gICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgnZmF2b3JpdGVzJywgSlNPTi5zdHJpbmdpZnkobmV3RmF2KSk7XG4gICAgICBjb25zb2xlLmxvZyhKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdmYXZvcml0ZXMnKSkpO1xuICAgICAgXG4gIH07XG5cbiAgY29uc3QgaGFuZGxlU3VibWl0ID0gYXN5bmMgZSA9PiB7XG4gICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xuICAgIGlmKCF2YWx1ZSkgcmV0dXJuO1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGBodHRwOi8vd3d3Lm9tZGJhcGkuY29tLz9zPSR7dmFsdWV9JmFwaWtleT04YWU4YjE4OWApO1xuICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuICAgIFxuICAgIFxuICAgIGRhdGEuUmVzcG9uc2UgPT09IFwiVHJ1ZVwiID8gc2V0UmVzdWx0KGRhdGEuU2VhcmNoKSA6IGFsZXJ0KFwiTW92aWUgbm90IGZvdW5kIVwiKTtcblxuICAgIGNvbnNvbGUubG9nKGRhdGEpO1xuICAgIFxuICB9XG5cbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBzdG9yZS5zZXRUZW1wKDIpO1xuICAgIGNvbnNvbGUubG9nKHN0b3JlLnRlbXApO1xuICAgIGlmKGZhdm9yaXRlICE9PSBudWxsKXtcbiAgICAgIHNldEZhdm9yaXRlKEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2Zhdm9yaXRlcycpKSk7XG4gICAgICBzdG9yZS5zZXRfbW92aWVzKEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2Zhdm9yaXRlcycpKSk7XG4gICAgfVxuXG4gICAgXG5cbiAgfSwgW10pO1xuXG4gIHJldHVybiAoXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICA8Zm9ybSBjbGFzc05hbWU9XCJmb3JtLWlubGluZVwiIGlkPVwiZm9ybVwiIG9uU3VibWl0PXtoYW5kbGVTdWJtaXR9PlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm93XCI+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbHVtblwiPlxuICAgICAgICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBjbGFzc05hbWU9XCJmb3JtLWNvbnRyb2xcIiBwbGFjZWhvbGRlcj1cIlRpdGxlXCIgb25DaGFuZ2U9e2UgPT4gc2V0VmFsdWUoZS50YXJnZXQudmFsdWUpfS8+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1uXCI+XG4gICAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIGNsYXNzTmFtZT1cImZvcm0tY29udHJvbFwiIHBsYWNlaG9sZGVyPVwiWWVhclwiIC8+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29sdW1uXCI+XG4gICAgICAgICAgICAgIDxzZWxlY3QgaWQ9XCJpbnB1dFN0YXRlXCIgY2xhc3NOYW1lPVwiZm9ybS1jb250cm9sXCI+XG4gICAgICAgICAgICAgICAgPG9wdGlvbiBkZWZhdWx0VmFsdWU+Q2hvb3NlLi4uPC9vcHRpb24+XG4gICAgICAgICAgICAgICAgPG9wdGlvbj4uLi48L29wdGlvbj5cbiAgICAgICAgICAgICAgPC9zZWxlY3Q+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxidXR0b24gdHlwZT1cInN1Ym1pdFwiIGNsYXNzTmFtZT1cImJ0biBidG4taW5mb1wiPlNlYXJjaDwvYnV0dG9uPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Zvcm0+XG4gICAgICAgIDxoci8+XG5cbiAgICAgICAgPGNlbnRlcj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvd1wiPlxuICAgICAgICAgICAge3Jlc3VsdC5tYXAoKG1vdmllLCBpbmRleCkgPT4gKFxuICAgICAgICAgICAgPENhcmQga2V5PXtpbmRleH0gXG4gICAgICAgICAgICAgIGluZGV4PXtpbmRleH0gXG4gICAgICAgICAgICAgIG1vdmllPXttb3ZpZX1cbiAgICAgICAgICAgICAgYWRkRmF2b3JpdGU9e2FkZEZhdm9yaXRlfVxuICAgICAgICAgICAgICBkZWxGYXZvcml0ZT17ZGVsRmF2b3JpdGV9XG4gICAgICAgICAgICAgIC8+IFxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvY2VudGVyPlxuXG4gICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAuZm9ybS1jb250cm9sIHtcbiAgICAgICAgICAgIG1hcmdpbi1yaWdodDoxMnB4O1xuICAgICAgICAgICAgXG4gICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICAgICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBvYnNlcnZlcihJbmRleCk7Il19 */\n/*@ sourceURL=/home/commodore64/ombd-next/pages/index.js */"));
 }
 
 ;
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Object(mobx_react__WEBPACK_IMPORTED_MODULE_8__["observer"])(Index));
 
 /***/ }),
 
-/***/ 3:
+/***/ "./store.js":
+/*!******************!*\
+  !*** ./store.js ***!
+  \******************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
+
+
+
+
+var MovieStore =
+/*#__PURE__*/
+function () {
+  function MovieStore() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, MovieStore);
+
+    this.movielist = [];
+    this.temp = 1;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(MovieStore, [{
+    key: "set_movies",
+    value: function set_movies(array) {
+      console.log('set movie', array);
+      this.movielist = array || [];
+    }
+  }, {
+    key: "add_movies",
+    value: function add_movies(object) {
+      this.movielist.push(object);
+    }
+  }, {
+    key: "setTemp",
+    value: function setTemp(i) {
+      this.temp = i;
+    }
+  }, {
+    key: "count",
+    get: function get() {
+      return this.movielist.length;
+    }
+  }]);
+
+  return MovieStore;
+}();
+
+Object(mobx__WEBPACK_IMPORTED_MODULE_2__["decorate"])(MovieStore, {
+  movielist: mobx__WEBPACK_IMPORTED_MODULE_2__["observable"],
+  count: mobx__WEBPACK_IMPORTED_MODULE_2__["computed"],
+  set_movies: mobx__WEBPACK_IMPORTED_MODULE_2__["action"],
+  add_movies: mobx__WEBPACK_IMPORTED_MODULE_2__["action"]
+});
+var store = new MovieStore();
+/* harmony default export */ __webpack_exports__["default"] = (store);
+
+/***/ }),
+
+/***/ 1:
 /*!*********************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fcommodore64%2Fombd-next%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************/
@@ -8796,5 +10168,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

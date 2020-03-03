@@ -2,6 +2,9 @@ import fetch from 'isomorphic-unfetch';
 import localStorage from 'mobx-localstorage';
 import React, { useState, useEffect } from 'react';
 import Card from '../components/Card';
+import {observer} from 'mobx-react';
+import store from '../store';
+
 
 function Index() {
 
@@ -40,6 +43,18 @@ function Index() {
     console.log(data);
     
   }
+
+  useEffect(() => {
+    store.setTemp(2);
+    console.log(store.temp);
+    if(favorite !== null){
+      setFavorite(JSON.parse(localStorage.getItem('favorites')));
+      store.set_movies(JSON.parse(localStorage.getItem('favorites')));
+    }
+
+    
+
+  }, []);
 
   return (
       <div className="container">
@@ -87,4 +102,4 @@ function Index() {
     );
 };
 
-export default Index;
+export default observer(Index);
