@@ -23,7 +23,7 @@ function Favorites(props){
       <center>
         <div className="row">
             {store.count > 0 ?
-            (movielist.map((movie, index) => <Card key={index} delFavorite={delFavorite} movie={movie} favorited={movielist}/> ))
+            (movielist.map((movie, index) => <Card key={index} delFavorite={delFavorite} addFavorite={delFavorite} movie={movie} favorited={movielist}/> ))
             : <h1>Not found favorited!</h1>
             }
         </div>
