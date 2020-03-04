@@ -11,8 +11,6 @@ function Index(props) {
   const [year, setYear] = useState('');
   const [type, setType] = useState('');
 
-  const [result, setResult] = useState([]);
-
   const {store} = props;
 
   const addFavorite = object => {
@@ -28,7 +26,10 @@ function Index(props) {
     if(!title && !year && !type) return;
     const res = await fetch(`https://www.omdbapi.com/?s=${title}&y=${year}&type=${type}&apikey=8ae8b189`);
     const data = await res.json();
-    data.Response === "True" ? setResult(data.Search) : alert("Movie not found!");
+
+    store.get_movie(data.Search);
+
+    data.Response === "True" ? null : alert("Movie not found!");
   }
 
   useEffect(() => {
@@ -37,6 +38,7 @@ function Index(props) {
     }
   }, []);
 
+  
   return (
       <div className="container">
         <form className="form-inline" id="form" onSubmit={handleSubmit}>
@@ -49,8 +51,7 @@ function Index(props) {
             </div>
             <div className="column">
               <select id="inputState" className="form-control" onChange={e => setType(e.target.value)}>
-                <option defaultValue></option>
-                <option value="movie">movie</option>
+                <option defaultValue value="movie">movie</option>
                 <option value="series">series</option>
                 <option value="episode">episode</option>
               </select>
@@ -62,8 +63,8 @@ function Index(props) {
 
         <center>
           <div className="row"> 
-            {result.map((movie, index) => (
-            <Card key={index} 
+            {store.searchlist.map((movie, index) => (
+            <Card key={movie.imdbID} 
               index={index} 
               movie={movie}
               addFavorite={addFavorite}

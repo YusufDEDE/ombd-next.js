@@ -18,14 +18,15 @@ function Card({store, movie, index, addFavorite, delFavorite}) {
       movielist.map((item) => item.imdbID === movie.imdbID ? setFavcond(true) : null)
     }, [favCond]);
    
-    return <div className="column" key={movie.id} id="poster">
+    return <div className="column" id="poster">
             <div className="card text-white bg-dark mb-3">
                 <div className={css.example}>{movie.Title} ({movie.Year})</div><hr />
                   <div className="container">
                     <h4 className="card-title"></h4>
+                    <small>Rating : <b>{movie.imdbRating}</b></small>
                     <img src={movie.Poster !== "N/A" ? movie.Poster : "/default-movie.png"} id="image"/>
                     <hr />
-                    <p className="card-text container">
+                    <p className="card-text">
                     { favCond ?  ( 
                       <button className="btn btn-primary btn-sm"  onClick={() => {
                         delFavorite(movie); 
@@ -56,6 +57,11 @@ function Card({store, movie, index, addFavorite, delFavorite}) {
                     height:450px;
                     text-align: center;
                   }
+
+                  .container {
+                    margin: -10% 0% 0% 0%;
+                  }
+
                   @media screen and (max-width: 600px) {
                   .column {
                     width: 100%;

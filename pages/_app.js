@@ -5,6 +5,7 @@ import { Provider } from 'mobx-react'
 import store from '../store';
 
 function MyApp({ Component, pageProps }) {
+  
     return (
         <div>
           <Provider store={store}>
