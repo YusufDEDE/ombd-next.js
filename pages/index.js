@@ -30,7 +30,7 @@ function Index(props) {
     if(!title) return;
 
     
-    const res = await fetch(`http://www.omdbapi.com/?s=${title}&y=${year}&type=${type}&apikey=8ae8b189`);
+    const res = await fetch(`https://www.omdbapi.com/?s=${title}&y=${year}&type=${type}&apikey=8ae8b189`);
     const data = await res.json();
     
     data.Response === "True" ? setResult(data.Search) : alert("Movie not found!");
