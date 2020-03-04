@@ -15,9 +15,9 @@ function Card({store, movie, index, addFavorite, delFavorite}) {
       if(favorite !== null){
         setFavorite(JSON.parse(localStorage.getItem('favorites')));
       }
-      movielist.map((item) => item.Poster === movie.Poster && item.imdbID === movie.imdbID  ? setFavcond(true) : null)
+      movielist.map((item) => item.Poster === movie.Poster ? setFavcond(true) : null)
       
-    }, []);
+    }, [movielist]);
    
     return <div className="column" key={movie.id} id="poster">
             <div className="card text-white bg-dark mb-3">
