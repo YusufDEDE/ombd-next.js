@@ -7,7 +7,10 @@ import {inject, observer} from 'mobx-react';
 
 function Index(props) {
 
-  const [value, setValue] = useState();
+  const [title, setTitle] = useState('');
+  const [year, setYear] = useState('');
+  const [type, setType] = useState('');
+
   const [result, setResult] = useState([]);
 
   const {store} = props;
@@ -24,8 +27,10 @@ function Index(props) {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    if(!value) return;
-    const res = await fetch(`http://www.omdbapi.com/?s=${value}&y=${value}&apikey=8ae8b189`);
+    if(!title) return;
+
+    
+    const res = await fetch(`http://www.omdbapi.com/?s=${title}&y=${year}&type=${type}&apikey=8ae8b189`);
     const data = await res.json();
     
     data.Response === "True" ? setResult(data.Search) : alert("Movie not found!");
@@ -44,15 +49,17 @@ function Index(props) {
         <form className="form-inline" id="form" onSubmit={handleSubmit}>
           <div className="row">
             <div className="column">
-              <input type="text" className="form-control" placeholder="Title" onChange={e => setValue(e.target.value)}/>
+              <input type="text" className="form-control" placeholder="Title" onChange={e => setTitle(e.target.value)}/>
             </div>
             <div className="column">
-              <input type="text" className="form-control" placeholder="Year" onChange={e => setValue(e.target.value)}/>
+              <input type="text" className="form-control" placeholder="Year" onChange={e => setYear(e.target.value)}/>
             </div>
             <div className="column">
-              <select id="inputState" className="form-control">
-                <option defaultValue>Choose...</option>
-                <option>...</option>
+              <select id="inputState" className="form-control" onChange={e => setType(e.target.value)}>
+                <option defaultValue></option>
+                <option value="movie">movie</option>
+                <option value="series">series</option>
+                <option value="episode">episode</option>
               </select>
             </div>
             <button type="submit" className="btn btn-info">Search</button>
@@ -61,7 +68,7 @@ function Index(props) {
         <hr/>
 
         <center>
-          <div className="row">
+          <div className="row"> 
             {result.map((movie, index) => (
             <Card key={index} 
               index={index} 
