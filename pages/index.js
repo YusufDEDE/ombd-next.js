@@ -17,25 +17,18 @@ function Index(props) {
 
   const addFavorite = object => {
       store.add_movie(object);
-      console.log(JSON.parse(localStorage.getItem('favorites')));
   };
 
   const delFavorite = index => {
-      store.remove_movie(index);
-      console.log(JSON.parse(localStorage.getItem('favorites')));  
+      store.remove_movie(index);  
   };
 
   const handleSubmit = async e => {
     e.preventDefault();
-    if(!title) return;
-
-    
+    if(!title && !year && !type) return;
     const res = await fetch(`https://www.omdbapi.com/?s=${title}&y=${year}&type=${type}&apikey=8ae8b189`);
     const data = await res.json();
-    
     data.Response === "True" ? setResult(data.Search) : alert("Movie not found!");
-
-    console.log(data);
   }
 
   useEffect(() => {

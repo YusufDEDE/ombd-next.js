@@ -15,16 +15,16 @@ function Card({store, movie, index, addFavorite, delFavorite}) {
       if(favorite !== null){
         setFavorite(JSON.parse(localStorage.getItem('favorites')));
       }
-      movielist.map((item) => item.Poster === movie.Poster  ? setFavcond(true) : null)
+      movielist.map((item) => item.Poster === movie.Poster && item.imdbID === movie.imdbID  ? setFavcond(true) : null)
       
-    }, [movielist]);
+    }, []);
    
     return <div className="column" key={movie.id} id="poster">
             <div className="card text-white bg-dark mb-3">
                 <div className={css.example}>{movie.Title} ({movie.Year})</div><hr />
                   <div className="container">
                     <h4 className="card-title"></h4>
-                    <img src={movie.Poster} id="image"/>
+                    <img src={movie.Poster !== "N/A" ? movie.Poster : "/default-movie.png"} id="image"/>
                     <hr />
                     <p className="card-text container">
                     { favCond ?  ( 

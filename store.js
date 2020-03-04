@@ -9,7 +9,6 @@ class MovieStore {
     }
 
     set_movies(array) {
-        console.log('set movie', array);
         this.movielist = array || [];
     }
 

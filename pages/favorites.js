@@ -8,8 +8,6 @@ function Favorites(props){
   const {store} = props;
   const {movielist} = store;
 
-  console.log("aa", movielist);
-
   useEffect(() => {
     if(localStorage.getItem('favorites')){
       store.set_movies(JSON.parse(localStorage.getItem('favorites')));
