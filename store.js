@@ -12,7 +12,7 @@ class MovieStore {
     }
 
     async movie(id, array, name) {
-        const res = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=8ae8b189`);
+        const res = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=8ae8b189`);
         const data = await res.json();
         array.push(data);
         localStorage.setItem(name, JSON.stringify(array));
