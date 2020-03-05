@@ -28,7 +28,7 @@ function Card({store, movie, index, addFavorite, delFavorite}) {
                     <hr />
                     <p className="card-text">
                     { favCond ?  ( 
-                      <button className="btn btn-primary btn-sm"  onClick={() => {
+                      <button className="btn btn-danger btn-sm"  onClick={() => {
                         delFavorite(movie); 
                         setFavcond(false)}}> 
                         Del Favorite</button>
