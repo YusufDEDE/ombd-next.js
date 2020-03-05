@@ -8,12 +8,6 @@ function Favorites(props){
   const {store} = props;
   const {movielist} = store;
 
-  useEffect(() => {
-    if(localStorage.getItem('favorites')){
-      store.set_movies(JSON.parse(localStorage.getItem('favorites')));
-    }
-  }, []);
-
   const delFavorite = id => {
     store.remove_movie(id);
   };

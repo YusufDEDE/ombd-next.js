@@ -1,16 +1,17 @@
-import { observable, computed, action, decorate}  from 'mobx';
+import { observable, computed, action, decorate, autorun}  from 'mobx';
 import localStorage from 'mobx-localstorage';
 
 class MovieStore {
+    
     movielist = [];
     searchlist = [];
+    
 
     get count() {
         return this.movielist.length;
     }
 
     async movie(id, array, name) {
-        console.log(id);
         const res = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=8ae8b189`);
         const data = await res.json();
         array.push(data);
@@ -28,7 +29,6 @@ class MovieStore {
     get_movie(id) {
         this.searchlist = []
         id.map(item => {
-            console.log("ww", item.imdbID)
             this.movie(item.imdbID, this.searchlist, 'search');
         })
     }
@@ -52,4 +52,10 @@ decorate(MovieStore, {
 
 
 const store = new MovieStore();
+
+autorun(() =>{
+    console.log("autorun", JSON.parse(localStorage.getItem('favorites')));
+    store.set_movies(JSON.parse(localStorage.getItem('favorites')));
+});
+
 export default store;

@@ -30,14 +30,7 @@ function Index(props) {
     store.get_movie(data.Search);
 
     data.Response === "True" ? null : alert("Movie not found!");
-  }
-
-  useEffect(() => {
-    if(localStorage.getItem('favorites')){
-      store.set_movies(JSON.parse(localStorage.getItem('favorites')));
-    }
-  }, []);
-
+  } 
   
   return (
       <div className="container">
