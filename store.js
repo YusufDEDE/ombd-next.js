@@ -1,14 +1,32 @@
 import { observable, computed, action, decorate, autorun}  from 'mobx';
 import localStorage from 'mobx-localstorage';
+import Cookies from 'mobx-cookie'
 
 class MovieStore {
     
+    cookie = new Cookies('favorites');
+
     movielist = [];
     searchlist = [];
-    
+
+    get favorites() {
+        return this.cookie.value.all;
+    }
+
+    setFavorites = value => {
+        this.cookie.set(value); // 2 day
+    }
+
+    unsetFavorites = () => {
+        this.cookie.remove();
+    }
 
     get count() {
         return this.movielist.length;
+    }
+
+    get getAll() {
+        return this.movielist;
     }
 
     async movie(id, array, name) {
@@ -40,9 +58,15 @@ class MovieStore {
 }
 
 decorate(MovieStore, {
+    cookie:observable,
     movielist: observable,
     searchlist: observable,
+    
+    favorites:computed,
     count: computed,
+    getAll:computed,
+
+    setFavorites: action,
     movie: action,
     get_movie:action,
     set_movies: action,
@@ -53,7 +77,8 @@ decorate(MovieStore, {
 
 const store = new MovieStore();
 
-autorun(() =>{
+autorun(() => {
+    
     console.log("autorun", JSON.parse(localStorage.getItem('favorites')));
     store.set_movies(JSON.parse(localStorage.getItem('favorites')));
 });
