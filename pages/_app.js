@@ -5,9 +5,6 @@ import { Provider } from 'mobx-react'
 import store from '../store';
 
 function MyApp({ Component, pageProps }) {
-
-    const parse = JSON.stringify(store.favorites)
-    console.log("app.js ->", JSON.parse(parse));
     
     return (
         <div>
